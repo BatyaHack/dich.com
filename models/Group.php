@@ -40,4 +40,9 @@ class Group extends \yii\db\ActiveRecord
             'list_group' => 'List Group',
         ];
     }
+
+    public function getUsers()
+    {
+        return $this->hasMany(Users::className(), ['group_id'=>'id']);
+    }
 }

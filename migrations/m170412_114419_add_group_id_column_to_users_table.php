@@ -20,6 +20,6 @@ class m170412_114419_add_group_id_column_to_users_table extends Migration
      */
     public function down()
     {
-        
+
     }
 }

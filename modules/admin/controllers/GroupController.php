@@ -2,9 +2,11 @@
 
 namespace app\modules\admin\controllers;
 
+use app\models\Users;
 use Yii;
 use app\models\Group;
 use app\models\GroupSearch;
+use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -120,5 +122,21 @@ class GroupController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+    }
+
+    public function actionAddappr($id)
+    {
+        $users = ArrayHelper::map(Users::find()->all(), id, name);
+
+        if(Yii::$app->request->isPost)
+        {
+            $current_user = Users::find()->where('id=:id', [":id"=> Yii::$app->request->post('id')])
+                ->all();
+
+        }
+
+        return $this->render('listuser', [
+            'users' => $users
+        ]);
     }
 }

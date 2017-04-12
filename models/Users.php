@@ -64,6 +64,11 @@ class Users extends \yii\db\ActiveRecord
         return $this->hasOne(Curses::className(), ['id' => 'cursesid']);
     }
 
+    public  function getGroup()
+    {
+        return $this->hasOne(Group::className(), ['id' => 'group_id']);
+    }
+
     public function saveCurses($curses_id)
     {
         $curses = Curses::findOne($curses_id);
