@@ -57,4 +57,9 @@ class Curses extends \yii\db\ActiveRecord
             'student_payment' => 'Student Payment',
         ];
     }
+
+    public  function getUsers()
+    {
+        return $this->hasMany(Users::className(), ['cursesid'=>'id']);
+    }
 }

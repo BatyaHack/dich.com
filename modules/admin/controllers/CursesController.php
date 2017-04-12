@@ -2,9 +2,12 @@
 
 namespace app\modules\admin\controllers;
 
+use app\models\Users;
+use phpDocumentor\Reflection\DocBlock\Tags\Uses;
 use Yii;
 use app\models\Curses;
 use app\models\CursesSearch;
+use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -121,4 +124,56 @@ class CursesController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+    public function actionListuser($id)
+    {
+        $list_user = $this->findModel($id);
+        $current_curs = $id;
+        $cutuser = ArrayHelper::map($list_user->users, id, name);
+
+        return $this->render('userslist', [
+            'listuser' => $cutuser,
+            'id' => $current_curs
+        ]);
+    }
+
+    public function actionMytest($id)
+    {
+        $all_users = Users::find()->all();
+        $all_users = ArrayHelper::map($all_users, id, name);
+
+        if(Yii::$app->request->isPost)
+        {
+            $name = Yii::$app->request->post('name');
+
+            $name = Users::find()
+                ->where("id=:id", [":id"=>$name])
+                ->all();
+
+
+            if($name !=null && $name[0]->saveCurses($id))
+            {
+                return $this->redirect(['view', 'id'=>$id]);
+            }
+        }
+
+        return $this->render('useradd', [
+            'id' => $id,
+            'all_users' => $all_users,
+        ]);
+
+    }
 }
+
+/*
+    public function saveCurses($curses_id)
+    {
+        $curses = Curses::findOne($curses_id);
+
+        if($curses != null)
+        {
+            $this->link('curses', $curses);
+            return true;
+        }
+    }
+ */
