@@ -15,6 +15,7 @@ use Yii;
  * @property string $login
  * @property string $password
  * @property string $cursesid
+ * @property string $capital
  */
 class Users extends \yii\db\ActiveRecord
 {
@@ -54,6 +55,7 @@ class Users extends \yii\db\ActiveRecord
             'login' => 'Login',
             'password' => 'Password',
             'cursesid' => 'Cursesid',
+            'capital' => 'Capital'
         ];
     }
 
@@ -68,6 +70,10 @@ class Users extends \yii\db\ActiveRecord
 
         if($curses != null)
         {
+            //снимаем средства со счета
+            $this->capital = $this->capital - $curses->student_payment;
+            $this->save();
+
             $this->link('curses', $curses);
             return true;
         }
