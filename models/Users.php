@@ -16,6 +16,7 @@ use Yii;
  * @property string $password
  * @property string $cursesid
  * @property string $capital
+ * @property string $group_id
  */
 class Users extends \yii\db\ActiveRecord
 {
@@ -55,7 +56,8 @@ class Users extends \yii\db\ActiveRecord
             'login' => 'Login',
             'password' => 'Password',
             'cursesid' => 'Cursesid',
-            'capital' => 'Capital'
+            'capital' => 'Capital',
+            'group_id' => 'Group_id'
         ];
     }
 
@@ -82,5 +84,12 @@ class Users extends \yii\db\ActiveRecord
             $this->link('curses', $curses);
             return true;
         }
+    }
+
+    public function saveGroup($group_id)
+    {
+        $this->group_id = $group_id;
+        $this->save();
+        return true;
     }
 }

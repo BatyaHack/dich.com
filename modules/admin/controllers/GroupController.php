@@ -130,9 +130,12 @@ class GroupController extends Controller
 
         if(Yii::$app->request->isPost)
         {
-            $current_user = Users::find()->where('id=:id', [":id"=> Yii::$app->request->post('id')])
+            $current_user = Users::find()->where('id=:id', [":id"=> Yii::$app->request->post('name')])
                 ->all();
-
+            if($current_user[0]->saveGroup($id))
+            {
+                return $this->redirect(['view', 'id'=>$id]);
+            }
         }
 
         return $this->render('listuser', [
