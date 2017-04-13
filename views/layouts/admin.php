@@ -39,6 +39,7 @@ AppAsset::register($this);
                 ['label' => 'Home', 'url' => ['/admin/default/index']],
                 ['label' => 'Ученики', 'url' => ['/admin/users/index']],
                 ['label' => 'Курсы', 'url' => ['/admin/curses/index']],
+                ['label' => 'Расписание', 'url' => ['/admin/classes/index']],
                 ['label' => 'Предметы', 'url' => ['/admin/subjects/index']],
                 ['label' => 'Группы', 'url' => ['/admin/group/index']],
                 ['label' => 'Аудитории', 'url' => ['/admin/lecture/index']],
