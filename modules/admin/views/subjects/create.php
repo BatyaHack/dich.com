@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="subjects-create">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1>Добавить предмет</h1>
 
     <?= $this->render('_form', [
         'model' => $model,

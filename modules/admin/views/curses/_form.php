@@ -12,17 +12,17 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'name')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\Group::find()->all(), list_group, list_group)) ?>
 
-    <?= $form->field($model, 'lesson')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'lesson')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\Subjects::find()->all(), name, name)) ?>
 
-    <?= $form->field($model, 'teacher')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'teacher')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\Teacher::find()->all(), name, name)) ?>
 
     <?= $form->field($model, 'date_start')->textInput() ?>
 
     <?= $form->field($model, 'date_end')->textInput() ?>
 
-    <?= $form->field($model, 'type_payment')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'type_payment')->dropDownList(['абонимент' =>'абонимент','наличька'=> 'наличька']) ?>
 
     <?= $form->field($model, 'teach_salary')->textInput() ?>
 

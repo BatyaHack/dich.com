@@ -3,6 +3,7 @@
 namespace app\modules\admin\controllers;
 
 use app\models\Curses;
+use app\models\Subjects;
 use Yii;
 use app\models\Users;
 use app\models\UsersSearch;
@@ -127,8 +128,10 @@ class UsersController extends Controller
     public function  actionSetCurses($id)
     {
         $curs = $this->findModel($id);
+
         $curslist = ArrayHelper::map(Curses::find()->all(), 'id', 'name');
         $namecurs = $curs->curses->name;
+
 
 
 
@@ -137,6 +140,11 @@ class UsersController extends Controller
             $cur = Yii::$app->request->post('Curses');
             if($curs->saveCurses($cur))
             {
+                $lesson = Subjects::find()->where('name=:name',
+                    [':name'=>$curs->curses->lesson])->all();
+
+                $lesson[0]->num_stu += 1;
+                $lesson[0]->save();
                 return $this->redirect(['view', 'id'=>$curs->id]);
             }
         }

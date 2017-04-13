@@ -2,6 +2,7 @@
 
 namespace app\modules\admin\controllers;
 
+use app\models\Subjects;
 use app\models\Users;
 use phpDocumentor\Reflection\DocBlock\Tags\Uses;
 use Yii;
@@ -68,7 +69,18 @@ class CursesController extends Controller
     {
         $model = new Curses();
 
+
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            //добавление количество курсов в уроке
+            $lesson = Subjects::find()->where('name=:name', ['name'=> $model->lesson])
+                            ->all();
+
+            $lesson[0]->num_cou += 1;
+            $lesson[0]->save();
+
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
