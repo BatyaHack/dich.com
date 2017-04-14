@@ -2,19 +2,17 @@
 
 namespace app\modules\admin\controllers;
 
-use app\models\Curses;
-use app\models\Lesson;
 use Yii;
-use app\models\Classes;
-use app\models\ClassesSearch;
+use app\models\Lesson;
+use app\models\LessonSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ClassesController implements the CRUD actions for Classes model.
+ * LessonController implements the CRUD actions for Lesson model.
  */
-class ClassesController extends Controller
+class LessonController extends Controller
 {
     /**
      * @inheritdoc
@@ -32,12 +30,12 @@ class ClassesController extends Controller
     }
 
     /**
-     * Lists all Classes models.
+     * Lists all Lesson models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new ClassesSearch();
+        $searchModel = new LessonSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -47,7 +45,7 @@ class ClassesController extends Controller
     }
 
     /**
-     * Displays a single Classes model.
+     * Displays a single Lesson model.
      * @param integer $id
      * @return mixed
      */
@@ -59,46 +57,15 @@ class ClassesController extends Controller
     }
 
     /**
-     * Creates a new Classes model.
+     * Creates a new Lesson model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Classes();
+        $model = new Lesson();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-
-            $curses = Curses::find()->where('id=:id', [':id'=>$model->curses_id])
-                ->all();
-
-
-
-
-            //считаем количество пар
-            function count_dow_in_range($startdate,$enddate,$dow) {
-                /*$startdate -- unix timestamp, левая граница интервала
-                $enddate -- unix timestamp, правая граница интервала
-                $dow -- искомый день недели аналогично формату ф-ции date('w'), где вс=0, сб=6 */
-
-                $i=0; /*счетчик искомого дня недели*/
-                while($startdate<=$enddate) {
-                    if(date('w',$startdate)==$dow) $i++;
-                    $startdate+=86400;
-                }
-                return $i;
-            }
-            $count_lesson = count_dow_in_range(strtotime($curses[0]->date_start),
-                strtotime($curses[0]->date_end),1);
-
-            $new_lesson = new Lesson();
-            $new_lesson->classes_id = $model->id;
-            $new_lesson->data_lesson = $count_lesson;
-            $new_lesson->save();
-
-
-
-
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -108,7 +75,7 @@ class ClassesController extends Controller
     }
 
     /**
-     * Updates an existing Classes model.
+     * Updates an existing Lesson model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -127,7 +94,7 @@ class ClassesController extends Controller
     }
 
     /**
-     * Deletes an existing Classes model.
+     * Deletes an existing Lesson model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -140,15 +107,15 @@ class ClassesController extends Controller
     }
 
     /**
-     * Finds the Classes model based on its primary key value.
+     * Finds the Lesson model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Classes the loaded model
+     * @return Lesson the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Classes::findOne($id)) !== null) {
+        if (($model = Lesson::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

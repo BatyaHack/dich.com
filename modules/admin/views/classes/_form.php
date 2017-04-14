@@ -16,8 +16,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'lecture_id')->dropDownList(\yii\helpers\ArrayHelper::map(\app\models\Lecture::find()->all(), id, name))?>
 
-    <?= $form->field($model, 'data_day')->dropDownList(['Понедельник'=>'Понедельник', 'Вторник'=>'Вторник',
-        'Среда'=>'Среда', 'Четверг'=>'Четверг', 'Пятница'=>'Пятница', 'Суббота'=>'Суббота'])?>
+    <?= $form->field($model, 'data_day')->dropDownList(['1'=>'Понедельник', '2'=>'Вторник',
+        '3'=>'Среда', '4'=>'Четверг', '5'=>'Пятница', '6'=>'Суббота', '0'=>'Воскресенье'])?>
 
     <?= $form->field($model, 'data_start_time')->textInput()?>
 
