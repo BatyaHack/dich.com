@@ -62,4 +62,9 @@ class Curses extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Users::className(), ['cursesid'=>'id']);
     }
+
+    public function getClasses()
+    {
+        return $this->hasMany(Classes::className(), ['curses_id'=>'id']);
+    }
 }

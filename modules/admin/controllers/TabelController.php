@@ -2,23 +2,17 @@
 
 namespace app\modules\admin\controllers;
 
-use app\models\Classes;
-use app\models\Curses;
-use app\models\Lesson;
-use app\models\Subjects;
-use app\models\Tabel;
 use Yii;
-use app\models\Users;
-use app\models\UsersSearch;
-use yii\helpers\ArrayHelper;
+use app\models\Tabel;
+use app\models\TabelSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * UsersController implements the CRUD actions for Users model.
+ * TabelController implements the CRUD actions for Tabel model.
  */
-class UsersController extends Controller
+class TabelController extends Controller
 {
     /**
      * @inheritdoc
@@ -36,12 +30,12 @@ class UsersController extends Controller
     }
 
     /**
-     * Lists all Users models.
+     * Lists all Tabel models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new UsersSearch();
+        $searchModel = new TabelSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -51,7 +45,7 @@ class UsersController extends Controller
     }
 
     /**
-     * Displays a single Users model.
+     * Displays a single Tabel model.
      * @param integer $id
      * @return mixed
      */
@@ -63,13 +57,13 @@ class UsersController extends Controller
     }
 
     /**
-     * Creates a new Users model.
+     * Creates a new Tabel model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Users();
+        $model = new Tabel();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -81,7 +75,7 @@ class UsersController extends Controller
     }
 
     /**
-     * Updates an existing Users model.
+     * Updates an existing Tabel model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -100,7 +94,7 @@ class UsersController extends Controller
     }
 
     /**
-     * Deletes an existing Users model.
+     * Deletes an existing Tabel model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -113,80 +107,18 @@ class UsersController extends Controller
     }
 
     /**
-     * Finds the Users model based on its primary key value.
+     * Finds the Tabel model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Users the loaded model
+     * @return Tabel the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Users::findOne($id)) !== null) {
+        if (($model = Tabel::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
-    }
-
-    public function  actionSetCurses($id)
-    {
-        $curs = $this->findModel($id);
-
-        $curslist = ArrayHelper::map(Curses::find()->all(), 'id', 'name');
-        $namecurs = $curs->curses->name;
-
-
-
-
-        if(Yii::$app->request->isPost)
-        {
-            $cur = Yii::$app->request->post('Curses');
-            if($curs->saveCurses($cur))
-            {
-                //увеличение школьников на предмете
-                $lesson = Subjects::find()->where('name=:name',
-                    [':name'=>$curs->curses->lesson])->all();
-
-                $lesson[0]->num_stu += 1;
-                $lesson[0]->save();
-                //==================================================//
-
-
-
-
-                $classes = Classes::find()->where('curses_id=:curses_id', ['curses_id' => $cur])
-                                          ->all();
-
-                if($classes==null)
-                {
-                    echo 'нет расписания для данного курса';
-                }
-
-
-
-                $les = Lesson::find()->where('classes_id=:classes_id', [':classes_id' => $classes[0]->id])
-                                     ->all();
-
-                for($i=0; $i < $les[0]->data_lesson; $i++) {
-                    $tabel = new Tabel();
-                    $tabel->user_id = $curs->id;
-                    $tabel->curses_id = $cur;
-                    $tabel->save();
-                }
-
-
-
-                return $this->redirect(['view', 'id'=>$curs->id]);
-            }
-        }
-
-
-
-        return $this->render('addcurses',[
-            'curs' => $namecurs,
-            'curslist' => $curslist
-        ]);
-
-
     }
 }
