@@ -3,6 +3,7 @@ body {
     height: 100%;
 }
 
+
 .wrap {
     min-height: 100%;
     height: auto;
@@ -96,6 +97,9 @@ a.desc:after {
     border: none;
 }
 
+
+
+
 @media(max-width:767px) {
     .nav li > form > button.logout {
         display:block;
@@ -113,3 +117,4 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+

@@ -43,7 +43,8 @@ AppAsset::register($this);
                 ['label' => 'Предметы', 'url' => ['/admin/subjects/index']],
                 ['label' => 'Группы', 'url' => ['/admin/group/index']],
                 ['label' => 'Аудитории', 'url' => ['/admin/lecture/index']],
-                ['label' => 'Учителя', 'url' => ['/admin/teacher/index']]
+                ['label' => 'Учителя', 'url' => ['/admin/teacher/index']],
+                ['label' => 'Логин', 'url' => ['/admin/admin/index']]
             ],
         ]);
         NavBar::end();

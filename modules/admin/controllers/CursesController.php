@@ -3,11 +3,13 @@
 namespace app\modules\admin\controllers;
 
 use app\models\Subjects;
+use app\models\Tabel;
 use app\models\Users;
 use phpDocumentor\Reflection\DocBlock\Tags\Uses;
 use Yii;
 use app\models\Curses;
 use app\models\CursesSearch;
+use yii\db\Exception;
 use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -116,6 +118,21 @@ class CursesController extends Controller
      */
     public function actionDelete($id)
     {
+
+        //Удаление курса из табеля при удалении самого курса
+        if(Tabel::find()->where("curses_id=:curses_id", [":curses_id" => $id])->all() != null) {
+
+            $delete_table = Tabel::find()->where("curses_id=:curses_id", [":curses_id" => $id])
+                ->all();
+
+
+            foreach ($delete_table as $k => $v) {
+                $v->delete();
+                $v->save();
+            }
+        }
+        //================================================================//
+
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);

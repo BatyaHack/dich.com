@@ -107,6 +107,24 @@ class UsersController extends Controller
      */
     public function actionDelete($id)
     {
+
+        //Удаление пользователя из табеля при удалении самого пользователя
+        if( Tabel::find()->where("user_id=:user_id", [":user_id"=>$id])->all() != null) {
+            $delete_table = Tabel::find()->where("user_id=:user_id", [":user_id" => $id])
+                ->all();
+
+
+            foreach ($delete_table as $k => $v) {
+                $v->delete();
+                $v->save();
+            }
+        }
+        //================================================================
+
+
+
+
+
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
@@ -138,14 +156,12 @@ class UsersController extends Controller
 
 
 
-        if(Yii::$app->request->isPost)
-        {
+        if(Yii::$app->request->isPost) {
             $cur = Yii::$app->request->post('Curses');
-            if($curs->saveCurses($cur))
-            {
+            if ($curs->saveCurses($cur)) {
                 //увеличение школьников на предмете
                 $lesson = Subjects::find()->where('name=:name',
-                    [':name'=>$curs->curses->lesson])->all();
+                    [':name' => $curs->curses->lesson])->all();
 
                 $lesson[0]->num_stu += 1;
                 $lesson[0]->save();
@@ -155,28 +171,39 @@ class UsersController extends Controller
 
 
                 $classes = Classes::find()->where('curses_id=:curses_id', ['curses_id' => $cur])
-                                          ->all();
+                    ->all();
+                $les = Lesson::find()->where('classes_id=:classes_id', [':classes_id' => $classes[0]->id])
+                    ->all();
 
-                if($classes==null)
-                {
-                    echo 'нет расписания для данного курса';
+                if ($classes == null) {
+                    echo 'нет расписания для данного курса';die;
                 }
 
+                //Создания табеля
+                /* Я не знаю почему тут не очищается таблица! Хотя точно такой же код выше работает!!!!
+                if (Tabel::find()->where("user_id=:user_id", [":user_id" => $id])->all() != null) {
+                    $update = Tabel::find()->where("user_id=:user_id", [":user_id" => $id])
+                        ->all();
+                    print_r($update);
+                    foreach ($update as $k=>$v)
+                    {
+                        $v->delete();
+                        $v->save();
+                    }
+                }*/
 
 
-                $les = Lesson::find()->where('classes_id=:classes_id', [':classes_id' => $classes[0]->id])
-                                     ->all();
-
-                for($i=0; $i < $les[0]->data_lesson; $i++) {
+                for ($i = 0, $n = 1; $i < $les[0]->data_lesson; $i++, $n++) {
                     $tabel = new Tabel();
                     $tabel->user_id = $curs->id;
                     $tabel->curses_id = $cur;
+                    $tabel->date_lesson = $n;
                     $tabel->save();
+
+                    //================================================================================================//
                 }
+                    return $this->redirect(['view', 'id' => $curs->id]);
 
-
-
-                return $this->redirect(['view', 'id'=>$curs->id]);
             }
         }
 
@@ -186,7 +213,31 @@ class UsersController extends Controller
             'curs' => $namecurs,
             'curslist' => $curslist
         ]);
+    }
 
 
+    public function actionTesttest()
+    {
+         $dataString = Yii::$app->request->post('id');
+         $dataArry = explode(',', $dataString);
+
+
+         $data_tabel = Tabel::find()->where("user_id=:user_id", ["user_id"=>$dataArry[0]])
+                                    ->all();
+
+        if($data_tabel != null)
+        {
+            for ($tab = 0, $dat = 1; $tab < count($data_tabel); $tab++, $dat++)
+            {
+                $data_tabel[$tab]->visitation = $dataArry[$dat];
+                $data_tabel[$tab]->save();
+            }
+        }
+        else {
+            echo 'Что то пошло не так при исправлении табеля';
+            die;
+        }
+
+        /*для успешного зевершения*/ return "OK";//не может вернуть массив!
     }
 }

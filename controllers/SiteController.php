@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Login;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -122,4 +123,5 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
 }
