@@ -65,6 +65,7 @@ class ClassesController extends Controller
      */
     public function actionCreate()
     {
+
         $model = new Classes();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -77,6 +78,10 @@ class ClassesController extends Controller
 
             //считаем количество пар
             function count_dow_in_range($startdate,$enddate,$dow) {
+
+
+                global $dayWeeck, $lessen_day;
+
                 /*$startdate -- unix timestamp, левая граница интервала
                 $enddate -- unix timestamp, правая граница интервала
                 $dow -- искомый день недели аналогично формату ф-ции date('w'), где вс=0, сб=6 */
@@ -88,12 +93,51 @@ class ClassesController extends Controller
                 }
                 return $i;
             }
+
+
+            //Ищем первый нужный для нас день
+            function find_first_day($startdate,$enddate,$lessen_day)
+            {
+                $find = $startdate;
+                $dayWeeck = [
+                    'Sunday',
+                    'Monday',
+                    'Tuesday',
+                    'Wednesday',
+                    'Thursday',
+                    'Friday',
+                    'Saturday'
+                ];
+
+                while($startdate<=$enddate) {
+                    if(strftime('%A', $startdate) == $dayWeeck[$lessen_day])
+                    {
+                        $find = $startdate;
+                        break;
+                    }
+                    $startdate+=86400;
+                }
+                return date("Y-m-d", $find);
+            }
+
+
+
+
+
+
             $count_lesson = count_dow_in_range(strtotime($curses[0]->date_start),
-                strtotime($curses[0]->date_end),1);
+                strtotime($curses[0]->date_end),$model->data_day);
+
+            $first_day = find_first_day(strtotime($curses[0]->date_start),
+                strtotime($curses[0]->date_end), $model->data_day);
+
+            var_dump($first_day);
+
 
             $new_lesson = new Lesson();
             $new_lesson->classes_id = $model->id;
             $new_lesson->data_lesson = $count_lesson;
+            $new_lesson->first_lesson = $first_day;
             $new_lesson->save();
 
 

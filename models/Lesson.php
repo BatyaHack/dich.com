@@ -10,6 +10,7 @@ use Yii;
  * @property integer $id
  * @property integer $classes_id
  * @property string $data_lesson
+ * @property data $first_lesson
  */
 class Lesson extends \yii\db\ActiveRecord
 {
@@ -41,6 +42,7 @@ class Lesson extends \yii\db\ActiveRecord
             'id' => 'ID',
             'classes_id' => 'Classes ID',
             'data_lesson' => 'Data Lesson',
+            'first_lesson' => 'First Lesson',
         ];
     }
 

@@ -193,11 +193,14 @@ class UsersController extends Controller
                 }*/
 
 
-                for ($i = 0, $n = 1; $i < $les[0]->data_lesson; $i++, $n++) {
+                for ($i = 0, $n = 1, $start_data = strtotime($les[0]->first_lesson);
+                     $i < $les[0]->data_lesson;
+                     $i++, $n++, $start_data += 604800) {
                     $tabel = new Tabel();
                     $tabel->user_id = $curs->id;
                     $tabel->curses_id = $cur;
                     $tabel->date_lesson = $n;
+                    $tabel->calendar = date("Y-m-d", $start_data);
                     $tabel->save();
 
                     //================================================================================================//

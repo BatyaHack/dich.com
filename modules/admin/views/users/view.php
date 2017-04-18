@@ -58,7 +58,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </tr style="padding: 10px">
             <?php foreach ($fesites as $v) { ?>
                 <tr>
-                    <td style="background-color: #5cb85c"><?=$v->date_lesson?></td>
+                    <td style="background-color: #5cb85c"><?=$v->calendar?></td>
                     <td class="visibility"><input type="checkbox" class="visit" value="<?=$v->visitation?>"></td>
                 </tr>
             <?php }?>
