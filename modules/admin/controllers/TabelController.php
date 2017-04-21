@@ -1,7 +1,7 @@
 <?php
 
 namespace app\modules\admin\controllers;
-
+use app\controllers\BehaviorsController;
 use Yii;
 use app\models\Tabel;
 use app\models\TabelSearch;
@@ -12,11 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * TabelController implements the CRUD actions for Tabel model.
  */
-class TabelController extends Controller
+class TabelController extends BehaviorsController
 {
-    /**
-     * @inheritdoc
-     */
+
     public function behaviors()
     {
         return [

@@ -26,7 +26,12 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
             'name',
-            'teacher',
+            [
+                'attribute' => 'teacher',
+                'filter' => function($data){
+                    return $data->getTeacherName();
+                },  /*Обязательно нужно задавать key!. Так как key сравнивается со значениями!*/
+            ],
             'lesson',
             'student_payment',
 

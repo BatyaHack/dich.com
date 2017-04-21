@@ -1,7 +1,7 @@
 <?php
 
 namespace app\modules\admin\controllers;
-
+use app\controllers\BehaviorsController;
 use Yii;
 use app\models\Teacher;
 use app\models\TeacherSearch;
@@ -12,11 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * TeacherController implements the CRUD actions for Teacher model.
  */
-class TeacherController extends Controller
+class TeacherController extends BehaviorsController
 {
-    /**
-     * @inheritdoc
-     */
+
     public function behaviors()
     {
         return [

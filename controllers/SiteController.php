@@ -41,6 +41,7 @@ class SiteController extends Controller
     /**
      * @inheritdoc
      */
+
     public function actions()
     {
         return [
@@ -61,7 +62,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        return $this->render('index.php');
     }
 
     /**

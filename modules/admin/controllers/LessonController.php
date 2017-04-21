@@ -1,7 +1,7 @@
 <?php
 
 namespace app\modules\admin\controllers;
-
+use app\controllers\BehaviorsController;
 use Yii;
 use app\models\Lesson;
 use app\models\LessonSearch;
@@ -12,11 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * LessonController implements the CRUD actions for Lesson model.
  */
-class LessonController extends Controller
+class LessonController extends BehaviorsController
 {
-    /**
-     * @inheritdoc
-     */
+
     public function behaviors()
     {
         return [

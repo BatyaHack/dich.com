@@ -1,7 +1,7 @@
 <?php
 
 namespace app\modules\admin\controllers;
-
+use app\controllers\BehaviorsController;
 use app\models\Users;
 use Yii;
 use app\models\Group;
@@ -14,11 +14,9 @@ use yii\filters\VerbFilter;
 /**
  * GroupController implements the CRUD actions for Group model.
  */
-class GroupController extends Controller
+class GroupController extends BehaviorsController
 {
-    /**
-     * @inheritdoc
-     */
+
     public function behaviors()
     {
         return [

@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru" dir="ltr">
+<head>
+	  <base href="http://abakus-center.ru/about/news/83-ekb-center/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Мен" />
+  <meta name="author" content="Super User" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Новости Абакус центра. Актуальные новости в области развития детей. " />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Открылся новый центр в Екатеринбурге</title>
+  <link href="/templates/oasis/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" />
+  <link rel="stylesheet" href="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/helpers/jquery.fancybox-buttons.css?v=2.1.5" type="text/css" />
+  <link rel="stylesheet" href="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/helpers/jquery.fancybox-thumbs.css?v=2.1.5" type="text/css" />
+  <link rel="stylesheet" href="/plugins/content/jw_sigpro/jw_sigpro/tmpl/Classic/css/template.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/plugins/content/jw_sigpro/jw_sigpro/includes/css/print.css" type="text/css" media="print" />
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/jui/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+  <script src="/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+  <script src="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
+  <script src="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/jquery.fancybox.pack.js?v=2.1.5" type="text/javascript"></script>
+  <script src="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/helpers/jquery.fancybox-buttons.js?v=2.1.5" type="text/javascript"></script>
+  <script src="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/helpers/jquery.fancybox-thumbs.js?v=2.1.5" type="text/javascript"></script>
+  <script src="/plugins/content/jw_sigpro/jw_sigpro/includes/js/behaviour.js" type="text/javascript"></script>
+  <script src="/media/system/js/caption.js" type="text/javascript"></script>
+  <script type="text/javascript">
+
+		jQuery.noConflict();
+		jQuery(function($) {
+			$("a.fancybox-button").fancybox({
+				//padding: 0,
+				//fitToView	: false,
+				helpers		: {
+					title	: { type : 'inside' }, // options: over, inside, outside, float
+					buttons	: {}
+				},
+				afterLoad : function() {
+					this.title = '<b class="fancyboxCounter">Image ' + (this.index + 1) + ' of ' + this.group.length + '</b>' + (this.title ? this.title : '');
+				}
+			});
+		});
+	jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+  </script>
+
+	<link href="http://abakus-center.ru/templates/oasis/css/bootstrap/bootstrap-default.css" rel="stylesheet" type="text/css" />
+	<link href="http://abakus-center.ru/templates/oasis/css/bootstrap/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="http://abakus-center.ru//templates/oasis/css/template.css" type="text/css" />
+	<link href="http://abakus-center.ru/templates/oasis/css/template.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="http://abakus-center.ru/templates/oasis/css/editor.css" rel="stylesheet" type="text/css" media="screen" />
+	<style type="text/css"> 
+	.button {
+	background:#333333;
+	color:#FFFFFF;
+	margin-top:10px;
+	}
+	label {
+	display:block;
+	margin-top:4px;
+	margin-bottom:4px;
+	}
+	a, h1, h2, h3, h4, h5 {
+	color:#000000;}
+	body {font-family: Helvetica,Arial,Sans-Serif ;} 
+	</style>
+</head>
+<body class="contentpane">
+	<div style="padding:14px;">
+	<div id="system-message-container">
+	</div>
+
+	<div class="item-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="ru-RU" />
+	
+		
+			<div class="page-header">
+					<h2 itemprop="name">
+				Открылся новый центр в Екатеринбурге			</h2>
+									</div>
+							<div id="pop-print" class="btn hidden-print">
+				<a href="#" onclick="window.print();return false;"><span class="icon-print"></span>Печать</a>			</div>
+			
+				<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+									Подробности							</dt>
+
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar"></span>
+				<time datetime="2016-11-01T16:55:00+00:00" itemprop="datePublished">
+					Опубликовано: 01 ноября 2016				</time>
+			</dd>					
+					
+			
+						</dl>
+	
+	
+				
+								<div itemprop="articleBody">
+		
+<p class="readmore"> </p>
+<img src="/images/6APJZ87h5ik.jpg" width="100%" alt="" /><br><br>
+<p>Открылся второй центр Абакус в ЕКБ!</p>
+<p>Друзья, а у нас прекрасные новости: Открыт второй Центр ментальной арифметики "Абакус" в Екатеринбурге! </p>
+
+<p>Преподаватели Абакус-центра прошли повышение квалификации педагогов: обновили знания по сложению и вычитанию, изучили новинки онлайн-портала и игр BrainFitness, овладели последними фишками от Международной Ассоциации Ментальной Арифметики.</p>
+
+<p>Прикрепляем небольшой фотоотчет! Желаем Вам донести знания и любовь к ментальной арифметике вашим детям! </p>
+
+<p><a href="https://vk.com/abakuscenterpartners?w=wall-108735415_337">Новость в ВКонтакте</a></p>
+<br><br>
+
+
+<!-- JoomlaWorks "Simple Image Gallery Pro" Plugin (v3.0.7) starts here -->
+
+<ul id="sigProIdd3e6a79e5b" class="sigProContainer sigProClassic">
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/ekb2/H7s6H7EmYsQ.jpg" class="sigProLink fancybox-button" style="width:220px;height:220px;" rel="fancybox-button[galleryd3e6a79e5b]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image H7s6H7EmYsQ.jpg" title="Click to enlarge image H7s6H7EmYsQ.jpg" style="width:220px;height:220px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d3e6a79e5b_h7s6h7emysq.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/ekb2/P4Z-MsJj8Y4.jpg" class="sigProLink fancybox-button" style="width:220px;height:220px;" rel="fancybox-button[galleryd3e6a79e5b]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image P4Z-MsJj8Y4.jpg" title="Click to enlarge image P4Z-MsJj8Y4.jpg" style="width:220px;height:220px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d3e6a79e5b_p4z-msjj8y4.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/ekb2/dLDCdNodw7E.jpg" class="sigProLink fancybox-button" style="width:220px;height:220px;" rel="fancybox-button[galleryd3e6a79e5b]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image dLDCdNodw7E.jpg" title="Click to enlarge image dLDCdNodw7E.jpg" style="width:220px;height:220px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d3e6a79e5b_dldcdnodw7e.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProClear">&nbsp;</li>
+</ul>
+
+
+<div class="sigProPrintMessage">
+	View the embedded image gallery online at:
+	<br />
+	<a title="Открылся новый центр в Екатеринбурге" href="http://abakus-center.ru/about/news/83-ekb-center/?tmpl=component&print=1&page=#sigProIdd3e6a79e5b">http://abakus-center.ru/about/news/83-ekb-center/?tmpl=component&print=1&page=#sigProIdd3e6a79e5b</a>
+</div>
+
+<!-- JoomlaWorks "Simple Image Gallery Pro" Plugin (v3.0.7) ends here -->
+
+
+	</div>
+
+	
+							</div>
+	</div>
+</body>
+</html>

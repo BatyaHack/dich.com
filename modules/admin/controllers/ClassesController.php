@@ -2,6 +2,7 @@
 
 namespace app\modules\admin\controllers;
 
+use app\controllers\BehaviorsController;
 use app\models\Curses;
 use app\models\Lesson;
 use Yii;
@@ -14,11 +15,12 @@ use yii\filters\VerbFilter;
 /**
  * ClassesController implements the CRUD actions for Classes model.
  */
-class ClassesController extends Controller
+class ClassesController extends BehaviorsController
 {
     /**
      * @inheritdoc
      */
+
     public function behaviors()
     {
         return [
@@ -130,8 +132,6 @@ class ClassesController extends Controller
 
             $first_day = find_first_day(strtotime($curses[0]->date_start),
                 strtotime($curses[0]->date_end), $model->data_day);
-
-            var_dump($first_day);
 
 
             $new_lesson = new Lesson();

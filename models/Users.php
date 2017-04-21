@@ -61,15 +61,29 @@ class Users extends \yii\db\ActiveRecord
         ];
     }
 
-    public function getCurses()
+
+    public  function getCurses()
     {
-        return $this->hasOne(Curses::className(), ['id' => 'cursesid']);
+        return $this->hasMany(Curses::className(), ['id'=>'curses_id'])
+            ->viaTable('cursesuser', ['users_id'=>'id']);
     }
 
     public  function getGroup()
     {
         return $this->hasOne(Group::className(), ['id' => 'group_id']);
     }
+
+
+    /*public function getCursesName()
+    {
+        $curs = $this->curses;
+        return $curs ? $curs->name : '';
+    }*/
+
+
+
+
+
 
     public function saveCurses($curses_id)
     {
@@ -91,5 +105,24 @@ class Users extends \yii\db\ActiveRecord
         $this->group_id = $group_id;
         $this->save();
         return true;
+    }
+
+    public function getCursesName($spliter)
+    {
+
+        $line = implode($spliter, $this->test('name'));
+        return $line;
+    }
+
+    public function test($e)
+    {
+
+        $result_curses= [];
+        for ($i=0; $i<count($this->curses); $i++)
+        {
+            $result_curses[$i] = $this->curses[$i]->$e;
+        }
+        return $result_curses;
+
     }
 }

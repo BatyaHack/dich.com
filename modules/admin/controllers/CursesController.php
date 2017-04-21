@@ -1,6 +1,7 @@
 <?php
 
 namespace app\modules\admin\controllers;
+use app\controllers\BehaviorsController;
 
 use app\models\Subjects;
 use app\models\Tabel;
@@ -18,11 +19,12 @@ use yii\filters\VerbFilter;
 /**
  * CursesController implements the CRUD actions for Curses model.
  */
-class CursesController extends Controller
+class CursesController extends BehaviorsController
 {
     /**
      * @inheritdoc
      */
+
     public function behaviors()
     {
         return [

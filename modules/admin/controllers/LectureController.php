@@ -1,7 +1,7 @@
 <?php
 
 namespace app\modules\admin\controllers;
-
+use app\controllers\BehaviorsController;
 use Yii;
 use app\models\Lecture;
 use app\models\LectureSearch;
@@ -12,11 +12,10 @@ use yii\filters\VerbFilter;
 /**
  * LectureController implements the CRUD actions for Lecture model.
  */
-class LectureController extends Controller
+class LectureController extends BehaviorsController
 {
-    /**
-     * @inheritdoc
-     */
+
+
     public function behaviors()
     {
         return [

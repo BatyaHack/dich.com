@@ -70,4 +70,35 @@ class Classes extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Curses::className(), ['id' => 'curses_id']);
     }
+
+
+    public  function  getLectureName()
+    {
+        $lecture = $this->lecture;
+
+        return $lecture ? $lecture->name : 'Неназначенно';
+    }
+
+
+    public  function getCursesName()
+    {
+        $curses = $this->curses;
+
+        return $curses ? $curses->name : '';
+    }
+
+    public function  getDataDay($day)
+    {
+        $CurrentDay = [
+            'Воскресенье',
+            'Понедельник',
+            'Вторник',
+            'Среда',
+            'Четверг',
+            'Пятница',
+            'Суббота',
+        ];
+
+        return $CurrentDay[$day];
+    }
 }

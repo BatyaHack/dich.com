@@ -37,7 +37,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'email:email',
             'login',
             'password',
-            'cursesid',
+            [
+                'attribute' => 'cursesid',
+                'label' => 'Курсы',
+                'format' => 'text',
+                'value' => function($data) {
+                    return $data->getCursesName('/');
+                },
+            ],
         ],
     ]) ?>
 
@@ -58,10 +65,16 @@ $this->params['breadcrumbs'][] = $this->title;
         </tr style="padding: 10px">
             <?php foreach ($fesites as $v) { ?>
                 <tr>
-                    <td style="background-color: #5cb85c"><?=$v->calendar?></td>
-                    <td class="visibility"><input type="checkbox" class="visit" value="<?=$v->visitation?>"></td>
+                <?php if($v->curses_id != $oldGroyp) {?>
+                    </tr><tr style="background-color: lemonchiffon">
+                    <td colspan="2" style="text-align: center; padding: 10px;"><?=$v->curses->name?></td>
+                <?php }?>
+                    <tr>
+                        <td style="background-color: #5cb85c"><?=$v->calendar?></td>
+                        <td class="visibility"><input type="checkbox" class="visit" value="<?=$v->visitation?>"></td>
+                    </tr>
                 </tr>
-            <?php }?>
+            <?php $oldGroyp = $v->curses_id; }?>
         </table>
 
 

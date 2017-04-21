@@ -1,7 +1,7 @@
 <?php
 
 namespace app\modules\admin\controllers;
-
+use app\controllers\BehaviorsController;
 use Yii;
 use app\models\Subjects;
 use app\models\SubjectsSearch;
@@ -12,11 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * SubjectsController implements the CRUD actions for Subjects model.
  */
-class SubjectsController extends Controller
+class SubjectsController extends BehaviorsController
 {
-    /**
-     * @inheritdoc
-     */
+
     public function behaviors()
     {
         return [

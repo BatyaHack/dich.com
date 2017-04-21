@@ -60,11 +60,18 @@ class Curses extends \yii\db\ActiveRecord
 
     public  function getUsers()
     {
-        return $this->hasMany(Users::className(), ['cursesid'=>'id']);
+        //return $this->hasMany(Users::className(), ['cursesid'=>'id']);
+        return $this->hasMany(Users::className(), ['id'=>'users_id'])
+            ->viaTable('cursesuser', ['curses_id'=>'id']);
     }
 
     public function getClasses()
     {
         return $this->hasMany(Classes::className(), ['curses_id'=>'id']);
+    }
+
+    public function getTeacherName()
+    {
+       return [10, 20];
     }
 }

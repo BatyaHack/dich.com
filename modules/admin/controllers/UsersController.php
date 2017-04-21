@@ -1,7 +1,7 @@
 <?php
 
 namespace app\modules\admin\controllers;
-
+use app\controllers\BehaviorsController;
 use app\models\Classes;
 use app\models\Curses;
 use app\models\Lesson;
@@ -18,11 +18,9 @@ use yii\filters\VerbFilter;
 /**
  * UsersController implements the CRUD actions for Users model.
  */
-class UsersController extends Controller
+class UsersController extends BehaviorsController
 {
-    /**
-     * @inheritdoc
-     */
+
     public function behaviors()
     {
         return [
@@ -159,15 +157,16 @@ class UsersController extends Controller
         if(Yii::$app->request->isPost) {
             $cur = Yii::$app->request->post('Curses');
             if ($curs->saveCurses($cur)) {
-                //увеличение школьников на предмете
-                $lesson = Subjects::find()->where('name=:name',
-                    [':name' => $curs->curses->lesson])->all();
+                for($i=0; $i<count(curses); $i++)
+                {
+                    //увеличение школьников на предмете
+                    $lesson = Subjects::find()->where('name=:name',
+                        [':name' => $curs->curses[$i]->lesson])->all();
 
-                $lesson[0]->num_stu += 1;
-                $lesson[0]->save();
-                //==================================================//
-
-
+                    $lesson[0]->num_stu += 1;
+                    $lesson[0]->save();
+                    //==================================================//
+                }
 
 
                 $classes = Classes::find()->where('curses_id=:curses_id', ['curses_id' => $cur])
@@ -180,11 +179,12 @@ class UsersController extends Controller
                 }
 
                 //Создания табеля
-                /* Я не знаю почему тут не очищается таблица! Хотя точно такой же код выше работает!!!!
+                //Я не знаю почему тут не очищается таблица! Хотя точно такой же код выше работает!!!!
+                /*
                 if (Tabel::find()->where("user_id=:user_id", [":user_id" => $id])->all() != null) {
                     $update = Tabel::find()->where("user_id=:user_id", [":user_id" => $id])
                         ->all();
-                    print_r($update);
+                    //print_r($update);
                     foreach ($update as $k=>$v)
                     {
                         $v->delete();
