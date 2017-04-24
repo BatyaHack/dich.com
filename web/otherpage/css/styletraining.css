@@ -1,0 +1,83 @@
+#dichCon h2 {
+  margin-top: 60px;
+  color: black;
+  text-transform: uppercase;
+}
+#dichCon p {
+  margin: 20px 0px;
+}
+#dichCon .main-menu {
+  width: 180px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#dichCon .main-menu a {
+  display: block;
+  margin-bottom: -1px;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: #0088cc;
+  border: 1px solid #e5e5e5;
+}
+#dichCon .main-menu a:hover {
+  background: #f5f5f5;
+}
+#dichCon .main-menu .sub-menu {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #fcf8e3;
+}
+#dichCon .main-menu > li {
+  position: relative;
+}
+#dichCon .siteBarMenu ul {
+  padding: 0;
+  margin: 0;
+}
+#dichCon .siteBarMenu li {
+  padding: 15px 15px;
+  margin: -1px;
+  list-style-type: none;
+  border-collapse: collapse;
+  border: 1px solid #efefef;
+}
+#dichCon .siteBarMenu li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: url(/home/img/Menu_Arrows.png) no-repeat;
+  left: 340px;
+  margin-top: -1px;
+}
+#dichCon .siteBarMenu li:hover {
+  color: #9EC32D;
+  background-color: #fafafa;
+}
+#dichCon .siteBarMenu .turnArrow li {
+  background-position: 0 22px;
+}
+#dichCon .siteBarMenu .dropList li {
+  display: block;
+  border: none;
+  padding: 10px 20px;
+  margin: 0;
+}
+#dichCon .siteBarMenu .dropList li:before {
+  display: none;
+}
+#dichCon .siteBarMenu .hiddenBlock {
+  display: none;
+}
+#dichCon .siteBarMenu .hiddenBlock li {
+  border: none;
+  padding: 10px 20px;
+  margin: 0;
+}
+#dichCon .siteBarMenu .hiddenBlock li:before {
+  display: none;
+}

@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+//Дать класс зеленой кнопке. Вынести в отдыльный css, а потом уже подключить
+menu {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    img {
+        float: left;
+    }
+    a {
+        float: right;
+        display: inline-block;
+        background-color: white;
+        padding: 10px 20px;
+        margin-right: 5px;
+        margin-top: 30px;
+        text-transform: uppercase;
+        &:hover{
+            text-decoration: none;
+            background-color: #03addb;
+            color: white;
+        }
+    }
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    .custom_bot_container {
+        width: 100%;
+    }
+    .container {
+        padding: 0;
+    }
+    h1 {
+        color: white;
+        margin-top: -400px;
+        font-size: 50px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    p {
+        color: white;
+        font-size: 24px;
+    }
+    a {
+        margin-top: 40px;
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        background-color: #9EC32D;
+        text-transform: uppercase;
+        font-size: 24px;
+        &:hover {
+            text-decoration: none;
+            background-color: #29A3DD;
+            color: white;
+        }
+    }
+}
+
+#move {
+    padding-top: 40px;
+    background-color: #9EC32D;
+    padding-bottom: 40px;
+}
+
+#news {
+    margin-bottom: 50px;
+    h1,
+    p,
+    img {
+        width: 100%;
+    }
+    img {
+        margin: 20px 0 20px;
+    }
+    a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #9EC32D;
+        color: white;
+        &:hover {
+            text-decoration: none;
+            background-color: #29A3DD;
+            color: white;
+        }
+    }
+}
+
+#dichCon {
+    margin-bottom: 100px;
+    color: gray;
+    h1 {
+        color: #464646;
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 20px;
+        margin: 30px 0 30px;
+    }
+    p {
+        line-height: 1.7;
+    }
+    .quote {
+        &:before {
+            content: "\"";
+            padding: 0 20px;
+            font-size: 24pt;
+            text-align: center;
+            line-height: 42px;
+            color: #fff;
+            background: #ddd;
+            float: left;
+            position: relative;
+        }
+    }
+    a {
+        padding: 10px 20px;
+        color: white;
+        text-transform: uppercase;
+        display: inline-block;
+        background-color: #29a3dd;
+        font-size: 14px;
+        &:hover {
+            background-color: #9ec32d;
+            text-decoration: none;
+        }
+    }
+}
+
+#sendMessage {
+    width: 100%;
+    height: auto;
+    background-color: #03addb;
+    h3 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: white;
+    }
+    input[type="text"] {
+        border: 1px solid white;
+        border-radius: 0;
+        background-color: #03addb;
+        text-align: left;
+        color: white;
+        &:nth-child(1) {
+            margin-top: 15px;
+        }
+    }
+    input[type="submit"] {
+        padding: 10px;
+        color: white;
+        background-color: #03addb;
+        border: 1px solid white;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+}
+
+#lessonMessage {
+    h2 {
+        color: #666666;
+        padding-top: 50px;
+    }
+    p {
+        color: gray;
+        font-size: 18px;
+    }
+    a {
+        margin-top: 90px;
+        display: inline-block;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        background-color: #03addb;
+        border-radius: 0;
+        &:hover {
+            background-color: #9ec32d;
+        }
+    }
+}
+
+footer {
+    margin-top: 60px;
+    .nav_linck {
+        a {
+            margin: 0 10px;
+            color: black;
+            text-decoration: none;
+            &:hover {
+                color: black
+            }
+        }
+    }
+    p {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .social_linck {
+        a {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            background: url(/home/img/SpriteSocial.jpg) no-repeat;
+            &:nth-child(2) {
+                background-position: -57px 0;
+            }
+            &:nth-child(3) {
+                background-position: -114px 0;
+            }
+            &:nth-child(4) {
+                background-position: -171px 0;
+            }
+        }
+    }
+}
+
+.current_page{
+    background-color: #29a3dd;
+    color: white;
+}
+
+
+/*============    	АДАПТИВ    ===========*/
+
+@media(min-width:0px) and (max-width:320px) {}
+
+@media(min-width:321px) and (max-width:480px) {}
+
+@media(min-width:481px) and (max-width:768px) {}
+
+@media(min-width:769px) and (max-width:992px) {}
+
+@media(min-width:993px) and (max-width:1200px) {}

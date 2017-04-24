@@ -1,0 +1,65 @@
+h2 {
+  font-size: 18px;
+  margin: 30px 0 7px;
+  color: #666666;
+}
+p {
+  color: gray;
+}
+#grayBlock .grayBack {
+  background-color: #efefef;
+  margin-bottom: 50px;
+}
+#grayBlock h2 {
+  padding: 20px 20px 0;
+}
+#grayBlock p {
+  padding: 0 20px 20px;
+}
+#greenBlock {
+  width: 100%;
+  background-color: #9ec32d;
+}
+#greenBlock h1 {
+  color: white;
+  margin-top: 50px;
+}
+#greenBlock hr {
+  color: white;
+}
+#greenBlock .col-md-2 h1 {
+  border: 2px solid white;
+  border-radius: 500px;
+  color: white;
+  height: 115px;
+  /* font-weight: bold; */
+  width: 115px;
+  display: table;
+  margin: 20px auto;
+  font-size: 50px;
+  padding-top: 30px;
+}
+#greenBlock .col-md-2 b,
+#greenBlock .col-md-2 p {
+  color: white;
+}
+#greenBlock .col-md-2 p {
+  margin-bottom: 100px;
+}
+#dichCon {
+  margin-bottom: 50px;
+}
+#dichCon .reviews {
+  margin-top: 40px;
+  border: 1px solid #29a3dd;
+  padding: 20px;
+}
+#dichCon iframe {
+  margin-bottom: 20px;
+}
+#gift h2 {
+  margin-top: 80px;
+}
+#gift p {
+  margin-bottom: 80px;
+}

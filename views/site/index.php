@@ -5,12 +5,12 @@
                 <img src="#" alt="лого" width="200" height="100">
             </div>
             <div class="col-md-10 menu_button">
-                <a href="#">Абакус</a>
-                <a href="#">Семинары</a>
-                <a href="#">Обучение</a>
-                <a href="#">Франшиза</a>
-                <a href="#">Контакты абакус</a>
-                <a href="/admin/">Личный кабинет</a>
+                <a href="/site">Абакус</a>
+                <a href="/seminar">Семинары</a>
+                <a href="/training">Обучение</a>
+                <a href="/franchise">Франшиза</a>
+                <a href="/contacts">Контакты абакус</a>
+                <a href="/admin">Личный кабинет</a>
             </div>
         </div>
     </div>
@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="img/SliderBackground.jpg" alt="...">
+                    <img src="/public/img/SliderBackground.jpg" alt="...">
                     <div class="carousel-caption">
                         <h1>СЕМИНАРЫ ДЛЯ ПРЕПОДАВАТЕЛЕЙ</h1>
                         <p>У НАС ВЫ МОЖЕТЕ ОБУЧИТЬСЯ ПО УНИКАЛЬНОЙ ПРОГРАММЕ «МЕНТАЛЬНАЯ АРИФМЕТИКА», АДАПТИРОВАННУЮ ПОД РФ И СНГ
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="img/SliderBackground.jpg" alt="...">
+                    <img src="/public/img/SliderBackground.jpg" alt="...">
                     <div class="carousel-caption">
                         <h1>СЕМИНАРЫ ДЛЯ ПРЕПОДАВАТЕЛЕЙ</h1>
                         <p>У НАС ВЫ МОЖЕТЕ ОБУЧИТЬСЯ ПО УНИКАЛЬНОЙ ПРОГРАММЕ «МЕНТАЛЬНАЯ АРИФМЕТИКА», АДАПТИРОВАННУЮ ПОД РФ И СНГ

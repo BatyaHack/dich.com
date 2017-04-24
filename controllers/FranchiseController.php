@@ -11,7 +11,7 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 
 
-class SeminarController extends Controller
+class FranchiseController extends Controller
 {
     public function behaviors()
     {
