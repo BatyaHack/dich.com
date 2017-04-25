@@ -27,7 +27,8 @@ class OtherAsset extends AssetBundle
         "otherpage/css/franchise.css",
         "otherpage/css/seminars.css",
         "otherpage/css/styletraining.css",
-        "otherpage/css/enrollLesson.css"
+        "otherpage/css/enrollLesson.css",
+        "otherpage/css/map.css",
     ];
     public $js = [
         "otherpage/js/bootstrap.min.js",

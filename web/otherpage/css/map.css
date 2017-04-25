@@ -1,0 +1,25 @@
+#MapCont h1 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+#MapCont h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+#MapCont a {
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: white;
+  background-color: #9ec32d;
+  font-size: 12px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+#MapCont a:hover {
+  background-color: #03addb;
+  text-decoration: none;
+}
+#MapCont .set_mar_bot {
+  margin-bottom: 50px;
+}

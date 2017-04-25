@@ -17,61 +17,46 @@
 </menu>
 
 
-
+ПАРТНЕРСТВО С АБАКУС-ЦЕНТРОМ
+МЫ ОТКРЫТЫ ДЛЯ ТЕХ, КТО ХОЧЕТ РАБОТАТЬ С НАМИ
 
 
 <header>
-    <div class="container custom_bot_container">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Маркеры слайдов -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
+    <?php use yii\bootstrap\Carousel;
 
-            <!-- Содержимое слайдов -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="/public/img/SliderBackground.jpg" alt="...">
-                    <div class="carousel-caption">
-                        <h1>СЕМИНАРЫ ДЛЯ ПРЕПОДАВАТЕЛЕЙ</h1>
-                        <p>У НАС ВЫ МОЖЕТЕ ОБУЧИТЬСЯ ПО УНИКАЛЬНОЙ ПРОГРАММЕ «МЕНТАЛЬНАЯ АРИФМЕТИКА», АДАПТИРОВАННУЮ ПОД РФ И СНГ
-                        </p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="/public/img/SliderBackground.jpg" alt="...">
-                    <div class="carousel-caption">
-                        <h1>СЕМИНАРЫ ДЛЯ ПРЕПОДАВАТЕЛЕЙ</h1>
-                        <p>У НАС ВЫ МОЖЕТЕ ОБУЧИТЬСЯ ПО УНИКАЛЬНОЙ ПРОГРАММЕ «МЕНТАЛЬНАЯ АРИФМЕТИКА», АДАПТИРОВАННУЮ ПОД РФ И СНГ
-                        </p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="/public/img/SliderBackground.jpg" alt="...">
-                    <div class="carousel-caption">
-                        <h1>СЕМИНАРЫ ДЛЯ ПРЕПОДАВАТЕЛЕЙ</h1>
-                        <p>У НАС ВЫ МОЖЕТЕ ОБУЧИТЬСЯ ПО УНИКАЛЬНОЙ ПРОГРАММЕ «МЕНТАЛЬНАЯ АРИФМЕТИКА», АДАПТИРОВАННУЮ ПОД РФ И СНГ
-                        </p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div>
-    </div>
+    echo Carousel::widget ( [
+        'items' => [
+            [
+                'content' => '<img src="/web/public/img/SliderBackground.jpg"/>',
+                'caption' => '<h2>ДОБРО ПОЖАЛОВАТЬ В АБАКУС-ЦЕНТР</h2><p>ОБУЧЕНИЕ В НАШИХ ЦЕНТРАХ ВЕДЕТСЯ ПО СТАНДАРТАМ МЕЖДУНАРОДНОЙ 
+                  АССОЦИАЦИИ МЕНТАЛЬНОЙ АРИФМЕТИКИ</p>
+                  <a href="/web/enroll">ЗАПИСАТЬСЯ НА ПРОБНОЕ ЗАНЯТИЕ</a>',
+                'options' => []
+            ],
+            [
+                'content' => '<img src="/web/public/img/SliderBackground.jpg"/>',
+                'caption' => '<h2>О МЕТОДИКЕ МЕНТАЛЬНОЙ АРИФМЕТИКИ</h2><p>ВЫСОКОЭФФЕКТИВНАЯ ПРОГРАММА РАЗВИТИЯ УМСТВЕННЫХ СПОСОБНОСТЕЙ
+ПРИ ПОМОЩИ АРИФМЕТИЧЕСКИХ ВЫЧИСЛЕНИЙ НА СЧЕТАХ (АБАКУС, СОРОБАН)</p><a href="#">ПОДРОБНЕЕ</a>',
+                'options' => []
+            ],
+            [
+                'content' => '<img src="/web/public/img/SliderBackground.jpg"/>',
+                'caption' => '<h2>СЕМИНАРЫ ДЛЯ ПРЕПОДАВАТЕЛЕЙ</h2><p>У НАС ВЫ МОЖЕТЕ ОБУЧИТЬСЯ ПО УНИКАЛЬНОЙ ПРОГРАММЕ «МЕНТАЛЬНАЯ 
+                  АРИФМЕТИКА», АДАПТИРОВАННУЮ ПОД РФ И СНГ</p>
+                  <a href="/web/contacts">ПОДРОБНЕЕ</a>',
+                'options' => []
+            ],
+            [
+                'content' => '<img src="/web/public/img/SliderBackground.jpg"/>',
+                'caption' => '<h2>ПАРТНЕРСТВО С АБАКУС-ЦЕНТРОМ</h2><p>МЫ ОТКРЫТЫ ДЛЯ ТЕХ, КТО ХОЧЕТ РАБОТАТЬ С НАМИ</p>
+                          <a href="/web/franchise">ПОДРОБНЕЕ</a>',
+                'options' => []
+            ]
+        ],
+        'options' => [
+            'style' => 'width: px; height: 600px;' // Задаем ширину контейнера
+        ]
+    ]);?>
 </header>
 
 

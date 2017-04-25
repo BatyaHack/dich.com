@@ -208,4 +208,9 @@ footer .social_linck a:nth-child(4) {
   background-color: #29a3dd;
   color: white;
 }
+
+.carousel-caption{
+  position: absolute;
+  top: 300px;
+}
 /*============    	АДАПТИВ    ===========*/
