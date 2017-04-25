@@ -1,0 +1,26 @@
+#dichCon input[type="text"] {
+  border: 1px solid #29a3dd;
+  border-radius: 0;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  text-align: left;
+  color: #29a3dd;
+}
+#dichCon input[type="submit"] {
+  float: right;
+  padding: 10px 20px;
+  background-color: #29a3dd;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+}
+#dichCon select {
+  padding: 10px 20px;
+  background-color: #efefef;
+  border-radius: 0;
+  font-size: 18px;
+}
+#dichCon h3 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
