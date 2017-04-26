@@ -24,7 +24,7 @@ menu a {
 }
 menu a:hover {
   text-decoration: none;
-  background-color: #29A3DD;
+  background-color: #ff4d42;
   color: white;
 }
 header {
@@ -53,18 +53,18 @@ header a {
   display: inline-block;
   padding: 10px 20px;
   color: white;
-  background-color: #9EC32D;
+  background-color: #f6d625;
   text-transform: uppercase;
   font-size: 24px;
 }
 header a:hover {
   text-decoration: none;
-  background-color: #29A3DD;
+  background-color: #ff4d42;
   color: white;
 }
 #move {
   padding-top: 40px;
-  background-color: #9EC32D;
+  background-color: #f6d625;
   padding-bottom: 40px;
 }
 #news {
@@ -81,12 +81,12 @@ header a:hover {
 #news a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #9EC32D;
+  background-color: #f6d625;
   color: white;
 }
 #news a:hover {
   text-decoration: none;
-  background-color: #29A3DD;
+  background-color: #ff4d42;
   color: white;
 }
 #dichCon {
@@ -120,17 +120,17 @@ header a:hover {
   color: white;
   text-transform: uppercase;
   display: inline-block;
-  background-color: #29a3dd;
+  background-color: #ff4d42;
   font-size: 14px;
 }
 #dichCon a:hover {
-  background-color: #9ec32d;
+  background-color: #f6d625;
   text-decoration: none;
 }
 #sendMessage {
   width: 100%;
   height: auto;
-  background-color: #03addb;
+  background-color: #ff4d42;
 }
 #sendMessage h3 {
   padding-top: 30px;
@@ -140,7 +140,7 @@ header a:hover {
 #sendMessage input[type="text"] {
   border: 1px solid white;
   border-radius: 0;
-  background-color: #03addb;
+  background-color: #ff4d42;
   text-align: left;
   color: white;
 }
@@ -150,7 +150,7 @@ header a:hover {
 #sendMessage input[type="submit"] {
   padding: 10px;
   color: white;
-  background-color: #03addb;
+  background-color: #ff4d42;
   border: 1px solid white;
   text-transform: uppercase;
   margin-bottom: 50px;
@@ -170,11 +170,11 @@ header a:hover {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  background-color: #03addb;
+  background-color: #ff4d42;
   border-radius: 0;
 }
 #lessonMessage a:hover {
-  background-color: #9ec32d;
+  background-color: #f6d625;
 }
 footer {
   margin-top: 60px;
@@ -206,4 +206,9 @@ footer .social_linck a:nth-child(3) {
 footer .social_linck a:nth-child(4) {
   background-position: -171px 0;
 }
+
+.carousel-caption{
+  top: 150px;
+}
+
 /*============    	АДАПТИВ    ===========*/

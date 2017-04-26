@@ -2,8 +2,10 @@
 
 namespace app\controllers;
 
+use app\models\Atricle;
 use app\models\Login;
 use Yii;
+use yii\data\Pagination;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -62,7 +64,24 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index.php');
+        // build a DB query to get all articles with status = 1
+        $query = Atricle::find();
+
+        // get the total number of articles (but do not fetch the article data yet)
+        $count = $query->count();
+
+        // create a pagination object with the total count
+        $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>6]);
+
+        // limit the query using the pagination and retrieve the articles
+        $articles = $query->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+
+        return $this->render('index.php', [
+            'articles' => $articles,
+            'pagination' => $pagination
+        ]);
     }
 
     /**
@@ -122,7 +141,7 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('about');
+        return $this->render('about.php');
     }
 
 }

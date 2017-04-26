@@ -34,7 +34,7 @@ class ImgUpload extends Model
 
             $fileName = strtolower(md5(uniqid($file->baseName)) . "." . $file->extension);
 
-            $file->saveAs(Yii::getAlias('@web') . "uploads/" . $fileName);
+            $file->saveAs(Yii::getAlias('@app'). "/web/" . "uploads/" . $fileName);
 
             return $fileName;
         }
@@ -42,8 +42,9 @@ class ImgUpload extends Model
 
     public function DeleteImg($currentImg)
     {
-        if (file_exists(Yii::getAlias('@web') . "uploads/". $currentImg && $currentImg!=null)) {
-            unlink(Yii::getAlias('@web') . "uploads/". $currentImg);
+
+        if (file_exists(Yii::getAlias('@app'). "/web/" . "uploads/" . $currentImg && $currentImg!=null)) {
+            unlink(Yii::getAlias('@app'). "/web/" . "uploads/" . $currentImg);
         }
     }
 }

@@ -5,24 +5,20 @@
                 <img src="#" alt="лого" width="200" height="100">
             </div>
             <div class="col-md-10 menu_button">
-                <a href="/site">Абакус</a>
-                <a href="/seminar">Семинары</a>
-                <a href="/training">Обучение</a>
-                <a href="/franchise">Франшиза</a>
-                <a href="/contacts">Контакты абакус</a>
-                <a href="/admin">Личный кабинет</a>
+                <a href="/web/site">Абакус</a>
+                <a href="/web/seminar">Семинары</a>
+                <a href="/web/training">Обучение</a>
+                <a href="/web/franchise">Франшиза</a>
+                <a href="/web/contacts">Контакты абакус</a>
+                <a href="/web/admin">Личный кабинет</a>
             </div>
         </div>
     </div>
 </menu>
 
-
-ПАРТНЕРСТВО С АБАКУС-ЦЕНТРОМ
-МЫ ОТКРЫТЫ ДЛЯ ТЕХ, КТО ХОЧЕТ РАБОТАТЬ С НАМИ
-
-
 <header>
     <?php use yii\bootstrap\Carousel;
+    use yii\widgets\LinkPager;
 
     echo Carousel::widget ( [
         'items' => [
@@ -78,47 +74,31 @@
 <section id="news">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <h2>Заголовок</h2>
-                <img src="http://www.calend.ru/img/content_images/i4/4095_or.jpg" alt="Картинка статьи" width="100%">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Подробнее</a>
-            </div>
-            <div class="col-md-4">
-                <h2>Заголовок</h2>
-                <img src="http://www.calend.ru/img/content_images/i4/4095_or.jpg" alt="Картинка статьи" width="100%">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Подробнее</a>
-            </div>
-            <div class="col-md-4">
-                <h2>Заголовок</h2>
-                <img src="http://www.calend.ru/img/content_images/i4/4095_or.jpg" alt="Картинка статьи" width="100%">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Подробнее</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Заголовок</h2>
-                <img src="http://www.calend.ru/img/content_images/i4/4095_or.jpg" alt="Картинка статьи" width="100%">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Подробнее</a>
-            </div>
-            <div class="col-md-4">
-                <h2>Заголовок</h2>
-                <img src="http://www.calend.ru/img/content_images/i4/4095_or.jpg" alt="Картинка статьи" width="100%">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Подробнее</a>
-            </div>
-            <div class="col-md-4">
-                <h2>Заголовок</h2>
-                <img src="http://www.calend.ru/img/content_images/i4/4095_or.jpg" alt="Картинка статьи" width="100%">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">Подробнее</a>
-            </div>
+            <?php foreach ($articles as $article) { ?>
+                <div class="col-md-4">
+                    <h2><?=$article->title?></h2>
+                    <img src="<?=$article->getImage()?>" alt="Картинка статьи" width="100%" height="240px">
+                    <p><?=$article->description?></p>
+                    <a href="#">Подробнее</a>
+                </div>
+            <?php  }?>
         </div>
     </div>
 </section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <?php
+            echo LinkPager::widget([
+                'pagination' => $pagination,
+            ]);
+            ?>
+        </div>
+    </div>
+
+</div>
+
 
 <section id="dichCon">
     <div class="container">
@@ -180,15 +160,10 @@
                     Для максимального эффекта начинать занятия следует в возрасте 4-7 лет. Можно начать и в 16 лет, тогда заниматься придется чуть больше. Кстати, по этой программе можно заниматься даже взрослым. В Америке она используется для профилактики старческого слабоумия. Запишитесь на открытое занятие и попробуйте эффективную систему «Абакус» на своем ребенке. Платить за открытое занятие не надо.
                 </p>
 
-                <a href="#">записаться на открытое занятие</a>
+                <a href="/web/training">записаться на открытое занятие</a>
             </div>
         </div>
     </div>
-
-
-
-
-
 </section>
 
 <section id="sendMessage">
@@ -226,7 +201,7 @@
                 <p>Первое занятие по Ментальной арифметике проходит бесплатно, позвоните нам и запишитесь уже сегодня!</p>
             </div>
             <div class="col-md-3 col-md-offset-1">
-                <a href="#" class="btn btn-block">Запись на занятие</a>
+                <a href="/web/training" class="btn btn-block">Запись на занятие</a>
             </div>
         </div>
     </div>
@@ -238,23 +213,21 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="nav_linck">
-                    <a href="#">Главная</a>
-                    <a href="#">Обучение</a>
-                    <a href="#">Семинары</a>
-                    <a href="#">Франшиза</a>
-                    <a href="#">Наши центры</a>
-                    <a href="#">Контакты</a>
+                    <a href="/web/site">Главная</a>
+                    <a href="/web/training">Обучение</a>
+                    <a href="/web/seminar">Семинары</a>
+                    <a href="/web/franchise">Франшиза</a>
+                    <a href="/web/contacts">Наши центры</a>
+                    <a href="/web/contacts">Контакты</a>
                 </div>
 
                 <p>2017. Ментальная арифметика Абакус | Курсы ментальной арифметики.</p>
                 <div class="social_linck">
-                    <a href="#">1</a>
-                    <a href="#">1</a>
-                    <a href="#">1</a>
-                    <a href="#">1</a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
                 </div>
-
-
             </div>
         </div>
     </div>
