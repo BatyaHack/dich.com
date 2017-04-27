@@ -211,4 +211,8 @@ footer .social_linck a:nth-child(4) {
   top: 150px;
 }
 
+.item img{
+  height: 100% !important;
+}
+
 /*============    	АДАПТИВ    ===========*/

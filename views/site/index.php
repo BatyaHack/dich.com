@@ -1,3 +1,8 @@
+
+
+
+
+
 <menu>
     <div class="container">
         <div class="row">
@@ -18,6 +23,7 @@
 
 <header>
     <?php use yii\bootstrap\Carousel;
+    use yii\helpers\Url;
     use yii\widgets\LinkPager;
 
     echo Carousel::widget ( [
@@ -79,7 +85,7 @@
                     <h2><?=$article->title?></h2>
                     <img src="<?=$article->getImage()?>" alt="Картинка статьи" width="100%" height="240px">
                     <p><?=$article->description?></p>
-                    <a href="#">Подробнее</a>
+                    <a href="<?= Url::toRoute(['news/index', 'id'=>$article->id]);?>">Подробнее</a>
                 </div>
             <?php  }?>
         </div>
