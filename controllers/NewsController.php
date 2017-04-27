@@ -53,4 +53,12 @@ class NewsController extends Controller
             'date' => $date,
         ]);
     }
+
+    public static function actionGetTitleArticle()
+    {
+        $article = Atricle::find()->orderBy('id')->all();
+        $article = array_reverse($article);
+        $article = array_slice($article, 0, 11);
+        return $article;
+    }
 }

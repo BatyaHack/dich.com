@@ -6,12 +6,12 @@
                 <img src="#" alt="лого" width="200" height="100">
             </div>
             <div class="col-md-10 menu_button">
-                <a href="/site">Абакус</a>
-                <a href="/seminar">Семинары</a>
-                <a href="/training">Обучение</a>
-                <a href="/franchise">Франшиза</a>
+                <a href="/web/site">Абакус</a>
+                <a href="/web/seminar">Семинары</a>
+                <a href="/web/training">Обучение</a>
+                <a href="/web/franchise">Франшиза</a>
                 <a href="#" class="current_page">Контакты абакус</a>
-                <a href="/admin">Личный кабинет</a>
+                <a href="/web/admin">Личный кабинет</a>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-md-offest-1">
+            <div class="col-md-4 col-md-offset-1">
                 <h2>Меню сайта</h2>
                 <div class="siteBarMenu">
                     <ul>

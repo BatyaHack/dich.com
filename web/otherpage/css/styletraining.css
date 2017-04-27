@@ -81,3 +81,10 @@
 #dichCon .siteBarMenu .hiddenBlock li:before {
   display: none;
 }
+
+#sendMessage .news_link{
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 0 0 7px;
+}

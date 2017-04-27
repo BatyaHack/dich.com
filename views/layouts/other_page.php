@@ -6,8 +6,10 @@
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
+use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use \app\controllers\NewsController;
 
 \app\assets\OtherAsset::register($this);
 ?>
@@ -35,7 +37,7 @@ use app\assets\AppAsset;
     <section id="sendMessage">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <h3>ЕСТЬ ВОПРОСЫ? ПИШИТЕ, МЫ ВАМ ОТВЕТИМ</h3>
                     <form action="#">
                         <div class="form-group">
@@ -54,6 +56,12 @@ use app\assets\AppAsset;
                             <input type="submit" value="Отправить">
                         </div>
                     </form>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <h3>ПОСЛЕДНИЕ НОВОСТИ</h3>
+                    <?php foreach (NewsController::actionGetTitleArticle() as $article) { ;?>
+                        <a class="news_link" href="<?=Url::toRoute(['news/index', 'id'=>$article->id])?>"><?=$article->title?></a>
+                    <?php }?>
                 </div>
             </div>
         </div>
