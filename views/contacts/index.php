@@ -1,3 +1,8 @@
+<?php
+use yii\helpers\Url;
+?>
+
+
 <!--Верхняя шпка-->
 <menu>
     <div class="container">
@@ -6,12 +11,12 @@
                 <img src="#" alt="лого" width="200" height="100">
             </div>
             <div class="col-md-10 menu_button">
-                <a href="/web/site">Абакус</a>
-                <a href="/web/seminar">Семинары</a>
-                <a href="/web/training">Обучение</a>
-                <a href="/web/franchise">Франшиза</a>
+                <a href="<?=Url::toRoute(['site/index'])?>">Абакус</a>
+                <a href="<?=Url::toRoute(['seminar/index'])?>">Семинары</a>
+                <a href="<?=Url::toRoute(['training/index'])?>">Обучение</a>
+                <a href="<?=Url::toRoute(['franchise/index'])?>">Франшиза</a>
                 <a href="#" class="current_page">Контакты абакус</a>
-                <a href="/web/admin">Личный кабинет</a>
+                <a href="<?=Url::toRoute(['/admin'])?>">Личный кабинет</a>
             </div>
         </div>
     </div>
@@ -30,24 +35,24 @@
                 <h2>КОНТАКТЫ</h2>
                 <div class="row">
                     <div class="col-md-6">
-                        <a class="btn btn-block" href="#">
+                        <a class="btn btn-block" href="<?=Url::toRoute(['map/index'])?>">
                             Главный офис
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a class="btn btn-block" href="#">
+                        <a class="btn btn-block" href="<?=Url::toRoute(['map/index'])?>">
                             Центры Абакус по Москве
                         </a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <a class="btn btn-block" href="#">
+                        <a class="btn btn-block" href="<?=Url::toRoute(['map/index'])?>">
                             Центры Абакус по России
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a class="btn btn-block" href="#">
+                        <a class="btn btn-block" href="<?=Url::toRoute(['map/index'])?>">
                             Центры Абакус по СНГ
                         </a>
                     </div>
