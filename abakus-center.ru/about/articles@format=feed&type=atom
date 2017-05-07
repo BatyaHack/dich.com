@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="ru-ru">
+	<title type="text">Новости Абакус центра: последние новости развития детей</title>
+	<subtitle type="text">МЕНТАЛЬНАЯ АРИФМЕТИКА- это высокоэффективная образовательная система, с помощью которой сотни тысяч детей научились считать в уме быстрее калькулятора</subtitle>
+	<link rel="alternate" type="text/html" href="http://abakus-center.ru"/>
+	<id>http://abakus-center.ru/about/articles/</id>
+	<updated>2017-04-15T14:29:18+00:00</updated>
+	<author>
+		<name>Ментальная арифметика Абакус | Курсы ментальной арифметики</name>
+	</author>
+	<generator uri="http://joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="http://abakus-center.ru/about/articles?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Ранние признаки дислексии</title>
+		<link rel="alternate" type="text/html" href="http://abakus-center.ru/about/articles/101-dyslexia-signs"/>
+		<published>2017-02-06T14:25:00+00:00</published>
+		<updated>2017-02-06T14:25:00+00:00</updated>
+		<id>http://abakus-center.ru/about/articles/101-dyslexia-signs</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img src=&quot;http://abakus-center.ru/images/0063573.jpg&quot; alt=&quot;&quot; /&gt; &lt;br/&gt;&lt;/p&gt;
+&lt;p class=&quot;readmore&quot;&gt;&lt;a href=&quot;http://abakus-center.ru/about/news/101-dyslexia-signs/&quot; target=&quot;_blank&quot;&gt;Подробнее...&lt;/a&gt;&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;http://abakus-center.ru/images/0063573.jpg&quot; alt=&quot;&quot; /&gt; &lt;br/&gt;&lt;/p&gt;
+&lt;p class=&quot;readmore&quot;&gt;&lt;a href=&quot;http://abakus-center.ru/about/news/101-dyslexia-signs/&quot; target=&quot;_blank&quot;&gt;Подробнее...&lt;/a&gt;&lt;/p&gt;
+</content>
+		<category term="Полезные статьи" />
+	</entry>
+	<entry>
+		<title>Лицензия для преподавания</title>
+		<link rel="alternate" type="text/html" href="http://abakus-center.ru/about/articles/99-myths"/>
+		<published>2017-02-06T14:25:00+00:00</published>
+		<updated>2017-02-06T14:25:00+00:00</updated>
+		<id>http://abakus-center.ru/about/articles/99-myths</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img src=&quot;http://abakus-center.ru/images/g67yuj2ed.jpg&quot; alt=&quot;&quot; /&gt; &lt;br/&gt;&lt;/p&gt;
+&lt;p class=&quot;readmore&quot;&gt;&lt;a href=&quot;http://abakus-center.ru/about/news/99-myths/&quot; target=&quot;_blank&quot;&gt;Подробнее...&lt;/a&gt;&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;http://abakus-center.ru/images/g67yuj2ed.jpg&quot; alt=&quot;&quot; /&gt; &lt;br/&gt;&lt;/p&gt;
+&lt;p class=&quot;readmore&quot;&gt;&lt;a href=&quot;http://abakus-center.ru/about/news/99-myths/&quot; target=&quot;_blank&quot;&gt;Подробнее...&lt;/a&gt;&lt;/p&gt;
+</content>
+		<category term="Полезные статьи" />
+	</entry>
+</feed>

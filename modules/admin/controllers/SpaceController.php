@@ -18,6 +18,6 @@ class SpaceController extends BehaviorsController
     public $layout = false;
     public function actionIndex()
     {
-        return $this->render('game4.html');
+        return $this->render('game4.php');
     }
 }

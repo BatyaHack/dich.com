@@ -6,6 +6,7 @@
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
+use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
@@ -484,7 +485,7 @@ use app\assets\AppAsset;
                     case 1:
                         $(bead_id).attr("state","none")
                         $(bead_id).css({
-                            "background": "url(custom/buspus-black.png)",
+                            "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                             "background-size": "contain",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -492,7 +493,7 @@ use app\assets\AppAsset;
                         bead_id = "#abakus_" + i.toString() + "beads_" + 2 + "bead_"+ k.toString();
                         $(bead_id).attr("state","active")
                         $(bead_id).css({
-                            "background": "url(custom/bus-black.png)",
+                            "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                             "background-size": "100% 100%",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -507,7 +508,7 @@ use app\assets\AppAsset;
                     case 5:
                         $(bead_id).attr("state","none")
                         $(bead_id).css({
-                            "background": "url(custom/buspus-black.png)",
+                            "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                             "background-size": "contain",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -515,7 +516,7 @@ use app\assets\AppAsset;
                         bead_id = "#abakus_" + i.toString() + "beads_" + 4 + "bead_"+ k.toString();
                         $(bead_id).attr("state","active")
                         $(bead_id).css({
-                            "background": "url(custom/bus-black.png)",
+                            "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                             "background-size": "100% 100%",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -529,7 +530,7 @@ use app\assets\AppAsset;
                     case 6:
                         $(bead_id).attr("state","none")
                         $(bead_id).css({
-                            "background": "url(custom/buspus-black.png)",
+                            "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                             "background-size": "contain",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -538,7 +539,7 @@ use app\assets\AppAsset;
                             bead_id = "#abakus_" + i.toString() + "beads_" + l.toString() + "bead_"+ k.toString();
                             $(bead_id).attr("state","active")
                             $(bead_id).css({
-                                "background": "url(custom/bus-black.png)",
+                                "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                 "background-size": "100% 100%",
                                 "background-repeat": "no-repeat",
                                 "background-position": "top center"
@@ -554,7 +555,7 @@ use app\assets\AppAsset;
                     case 7:
                         $(bead_id).attr("state","none")
                         $(bead_id).css({
-                            "background": "url(custom/buspus-black.png)",
+                            "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                             "background-size": "contain",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -563,7 +564,7 @@ use app\assets\AppAsset;
                             bead_id = "#abakus_" + i.toString() + "beads_" + l.toString() + "bead_"+ k.toString();
                             $(bead_id).attr("state","active")
                             $(bead_id).css({
-                                "background": "url(custom/bus-black.png)",
+                                "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                 "background-size": "100% 100%",
                                 "background-repeat": "no-repeat",
                                 "background-position": "top center"
@@ -579,7 +580,7 @@ use app\assets\AppAsset;
                     case 8:
                         $(bead_id).attr("state","none")
                         $(bead_id).css({
-                            "background": "url(custom/buspus-black.png)",
+                            "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                             "background-size": "contain",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -588,7 +589,7 @@ use app\assets\AppAsset;
                             bead_id = "#abakus_" + i.toString() + "beads_" + l.toString() + "bead_"+ k.toString();
                             $(bead_id).attr("state","active")
                             $(bead_id).css({
-                                "background": "url(custom/bus-black.png)",
+                                "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                 "background-size": "100% 100%",
                                 "background-repeat": "no-repeat",
                                 "background-position": "top center"
@@ -608,7 +609,7 @@ use app\assets\AppAsset;
                     case 2:
                         $(bead_id).attr("state","none")
                         $(bead_id).css({
-                            "background": "url(custom/buspus-black.png)",
+                            "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                             "background-size": "contain",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -616,7 +617,7 @@ use app\assets\AppAsset;
                         bead_id = "#abakus_" + i.toString() + "beads_" + 1 + "bead_"+ k.toString();
                         $(bead_id).attr("state","passive");
                         $(bead_id).css({
-                            "background": "url(custom/bus-schot-no-black.png)",
+                            "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                             "background-size": "100% 100%",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -631,7 +632,7 @@ use app\assets\AppAsset;
                     case 4:
                         $(bead_id).attr("state","none")
                         $(bead_id).css({
-                            "background": "url(custom/buspus-black.png)",
+                            "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                             "background-size": "contain",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -640,7 +641,7 @@ use app\assets\AppAsset;
                             bead_id = "#abakus_" + i.toString() + "beads_" + l.toString() + "bead_"+ k.toString();
                             $(bead_id).attr("state","passive")
                             $(bead_id).css({
-                                "background": "url(custom/bus-schot-no-black.png)",
+                                "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                 "background-size": "100% 100%",
                                 "background-repeat": "no-repeat",
                                 "background-position": "top center"
@@ -656,7 +657,7 @@ use app\assets\AppAsset;
                     case 5:
                         $(bead_id).attr("state","none")
                         $(bead_id).css({
-                            "background": "url(custom/buspus-black.png)",
+                            "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                             "background-size": "contain",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -665,7 +666,7 @@ use app\assets\AppAsset;
                             bead_id = "#abakus_" + i.toString() + "beads_" + l.toString() + "bead_"+ k.toString();
                             $(bead_id).attr("state","passive");
                             $(bead_id).css({
-                                "background": "url(custom/bus-schot-no-black.png)",
+                                "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                 "background-size": "100% 100%",
                                 "background-repeat": "no-repeat",
                                 "background-position": "top center"
@@ -680,7 +681,7 @@ use app\assets\AppAsset;
                     case 6:
                         $(bead_id).attr("state","none")
                         $(bead_id).css({
-                            "background": "url(custom/buspus-black.png)",
+                            "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                             "background-size": "contain",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -689,7 +690,7 @@ use app\assets\AppAsset;
                             bead_id = "#abakus_" + i.toString() + "beads_" + l.toString() + "bead_"+ k.toString();
                             $(bead_id).attr("state","passive");
                             $(bead_id).css({
-                                "background": "url(custom/bus-schot-no-black.png)",
+                                "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                 "background-size": "100% 100%",
                                 "background-repeat": "no-repeat",
                                 "background-position": "top center"
@@ -704,7 +705,7 @@ use app\assets\AppAsset;
                     case 7:
                         $(bead_id).attr("state","none")
                         $(bead_id).css({
-                            "background": "url(custom/buspus-black.png)",
+                            "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                             "background-size": "contain",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -713,7 +714,7 @@ use app\assets\AppAsset;
                             bead_id = "#abakus_" + i.toString() + "beads_" + l.toString() + "bead_"+ k.toString();
                             $(bead_id).attr("state","passive");
                             $(bead_id).css({
-                                "background": "url(custom/bus-schot-no-black.png)",
+                                "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                 "background-size": "100% 100%",
                                 "background-repeat": "no-repeat",
                                 "background-position": "top center"
@@ -1051,7 +1052,7 @@ use app\assets\AppAsset;
                                 var bead_id = "#abakus_" + i.toString() + "beads_" + j.toString() + "bead_"+(k+1).toString();
                                 if (j==2||j==4){
                                     $(bead_id).css({
-                                        "background": "url(custom/buspus-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                         "background-size": "contain",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1059,7 +1060,7 @@ use app\assets\AppAsset;
                                 }
                                 else
                                     $(bead_id).css({
-                                        "background": "url(custom/bus-schot-no-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                         "background-size": "100% 100%",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1073,7 +1074,7 @@ use app\assets\AppAsset;
                                 var bead_id = "#abakus_" + i.toString() + "beads_" + j.toString() + "bead_"+(k+1).toString();
                                 if (j==2||j==5){
                                     $(bead_id).css({
-                                        "background": "url(custom/buspus-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                         "background-size": "contain",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1088,7 +1089,7 @@ use app\assets\AppAsset;
                                     })
                                 else
                                     $(bead_id).css({
-                                        "background": "url(custom/bus-schot-no-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                         "background-size": "100% 100%",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1102,7 +1103,7 @@ use app\assets\AppAsset;
                                 var bead_id = "#abakus_" + i.toString() + "beads_" + j.toString() + "bead_"+(k+1).toString();
                                 if (j==2||j==6){
                                     $(bead_id).css({
-                                        "background": "url(custom/buspus-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                         "background-size": "contain",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1117,7 +1118,7 @@ use app\assets\AppAsset;
                                     })
                                 else
                                     $(bead_id).css({
-                                        "background": "url(custom/bus-schot-no-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                         "background-size": "100% 100%",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1131,7 +1132,7 @@ use app\assets\AppAsset;
                                 var bead_id = "#abakus_" + i.toString() + "beads_" + j.toString() + "bead_"+(k+1).toString();
                                 if (j==2||j==7){
                                     $(bead_id).css({
-                                        "background": "url(custom/buspus-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                         "background-size": "contain",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1146,7 +1147,7 @@ use app\assets\AppAsset;
                                     })
                                 else
                                     $(bead_id).css({
-                                        "background": "url(custom/bus-schot-no-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                         "background-size": "100% 100%",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1160,7 +1161,7 @@ use app\assets\AppAsset;
                                 var bead_id = "#abakus_" + i.toString() + "beads_" + j.toString() + "bead_"+(k+1).toString();
                                 if (j==2||j==8){
                                     $(bead_id).css({
-                                        "background": "url(custom/buspus-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                         "background-size": "contain",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1175,7 +1176,7 @@ use app\assets\AppAsset;
                                     })
                                 else
                                     $(bead_id).css({
-                                        "background": "url(custom/bus-schot-no-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                         "background-size": "100% 100%",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1189,7 +1190,7 @@ use app\assets\AppAsset;
                                 var bead_id = "#abakus_" + i.toString() + "beads_" + j.toString() + "bead_"+(k+1).toString();
                                 if (j==1||j==4){
                                     $(bead_id).css({
-                                        "background": "url(custom/buspus-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                         "background-size": "contain",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1204,7 +1205,7 @@ use app\assets\AppAsset;
                                     })
                                 else
                                     $(bead_id).css({
-                                        "background": "url(custom/bus-schot-no-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                         "background-size": "100% 100%",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1218,7 +1219,7 @@ use app\assets\AppAsset;
                                 var bead_id = "#abakus_" + i.toString() + "beads_" + j.toString() + "bead_"+(k+1).toString();
                                 if (j==1||j==5){
                                     $(bead_id).css({
-                                        "background": "url(custom/buspus-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                         "background-size": "contain",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1233,7 +1234,7 @@ use app\assets\AppAsset;
                                     })
                                 else
                                     $(bead_id).css({
-                                        "background": "url(custom/bus-schot-no-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                         "background-size": "100% 100%",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1247,7 +1248,7 @@ use app\assets\AppAsset;
                                 var bead_id = "#abakus_" + i.toString() + "beads_" + j.toString() + "bead_"+(k+1).toString();
                                 if (j==1||j==6){
                                     $(bead_id).css({
-                                        "background": "url(custom/buspus-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                         "background-size": "contain",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1262,7 +1263,7 @@ use app\assets\AppAsset;
                                     })
                                 else
                                     $(bead_id).css({
-                                        "background": "url(custom/bus-schot-no-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                         "background-size": "100% 100%",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1276,7 +1277,7 @@ use app\assets\AppAsset;
                                 var bead_id = "#abakus_" + i.toString() + "beads_" + j.toString() + "bead_"+(k+1).toString();
                                 if (j==1||j==7){
                                     $(bead_id).css({
-                                        "background": "url(custom/buspus-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                         "background-size": "contain",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1291,7 +1292,7 @@ use app\assets\AppAsset;
                                     })
                                 else
                                     $(bead_id).css({
-                                        "background": "url(custom/bus-schot-no-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                         "background-size": "100% 100%",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1305,7 +1306,7 @@ use app\assets\AppAsset;
                                 var bead_id = "#abakus_" + i.toString() + "beads_" + j.toString() + "bead_"+(k+1).toString();
                                 if (j==1||j==8){
                                     $(bead_id).css({
-                                        "background": "url(custom/buspus-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                         "background-size": "contain",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1320,7 +1321,7 @@ use app\assets\AppAsset;
                                     })
                                 else
                                     $(bead_id).css({
-                                        "background": "url(custom/bus-schot-no-black.png)",
+                                        "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                         "background-size": "100% 100%",
                                         "background-repeat": "no-repeat",
                                         "background-position": "top center"
@@ -1527,14 +1528,14 @@ use app\assets\AppAsset;
 
                             if (j==2||j==4)
                                 $(bead).css({
-                                    "background": "url(custom/buspus-black.png)",
+                                    "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
                                     "background-size": "contain",
                                     "background-repeat": "no-repeat",
                                     "background-position": "top center"
                                 })
                             else
                                 $(bead).css({
-                                    "background": "url(custom/bus-schot-no-black.png)",
+                                    "background": "url(<?=Url::to('@web/flash/custom/bus-schot-no-black.png')?>)",
                                     "background-size": "100% 100%",
                                     "background-repeat": "no-repeat",
                                     "background-position": "top center"

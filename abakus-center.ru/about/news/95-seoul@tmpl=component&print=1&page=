@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru" dir="ltr">
+<head>
+	  <base href="http://abakus-center.ru/about/news/95-seoul/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="последние новости детей, новости абакус, новости развития детей" />
+  <meta name="author" content="Super User" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Новости Абакус центра. Актуальные новости в области развития детей. " />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Олимпиада по ментал. арифметике в Сеуле</title>
+  <link href="/templates/oasis/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" />
+  <link rel="stylesheet" href="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/helpers/jquery.fancybox-buttons.css?v=2.1.5" type="text/css" />
+  <link rel="stylesheet" href="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/helpers/jquery.fancybox-thumbs.css?v=2.1.5" type="text/css" />
+  <link rel="stylesheet" href="/plugins/content/jw_sigpro/jw_sigpro/tmpl/Classic/css/template.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/plugins/content/jw_sigpro/jw_sigpro/includes/css/print.css" type="text/css" media="print" />
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/jui/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+  <script src="/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+  <script src="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
+  <script src="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/jquery.fancybox.pack.js?v=2.1.5" type="text/javascript"></script>
+  <script src="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/helpers/jquery.fancybox-buttons.js?v=2.1.5" type="text/javascript"></script>
+  <script src="/plugins/content/jw_sigpro/jw_sigpro/includes/js/jquery_fancybox/fancybox/helpers/jquery.fancybox-thumbs.js?v=2.1.5" type="text/javascript"></script>
+  <script src="/plugins/content/jw_sigpro/jw_sigpro/includes/js/behaviour.js" type="text/javascript"></script>
+  <script src="/media/system/js/caption.js" type="text/javascript"></script>
+  <script type="text/javascript">
+
+		jQuery.noConflict();
+		jQuery(function($) {
+			$("a.fancybox-button").fancybox({
+				//padding: 0,
+				//fitToView	: false,
+				helpers		: {
+					title	: { type : 'inside' }, // options: over, inside, outside, float
+					buttons	: {}
+				},
+				afterLoad : function() {
+					this.title = '<b class="fancyboxCounter">Image ' + (this.index + 1) + ' of ' + this.group.length + '</b>' + (this.title ? this.title : '');
+				}
+			});
+		});
+	jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+  </script>
+
+	<link href="http://abakus-center.ru/templates/oasis/css/bootstrap/bootstrap-default.css" rel="stylesheet" type="text/css" />
+	<link href="http://abakus-center.ru/templates/oasis/css/bootstrap/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="http://abakus-center.ru//templates/oasis/css/template.css" type="text/css" />
+	<link href="http://abakus-center.ru/templates/oasis/css/template.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="http://abakus-center.ru/templates/oasis/css/editor.css" rel="stylesheet" type="text/css" media="screen" />
+	<style type="text/css"> 
+	.button {
+	background:#333333;
+	color:#FFFFFF;
+	margin-top:10px;
+	}
+	label {
+	display:block;
+	margin-top:4px;
+	margin-bottom:4px;
+	}
+	a, h1, h2, h3, h4, h5 {
+	color:#000000;}
+	body {font-family: Helvetica,Arial,Sans-Serif ;} 
+	</style>
+</head>
+<body class="contentpane">
+	<div style="padding:14px;">
+	<div id="system-message-container">
+	</div>
+
+	<div class="item-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="ru-RU" />
+	
+		
+			<div class="page-header">
+					<h2 itemprop="name">
+				Олимпиада по ментал. арифметике в Сеуле			</h2>
+									</div>
+							<div id="pop-print" class="btn hidden-print">
+				<a href="#" onclick="window.print();return false;"><span class="icon-print"></span>Печать</a>			</div>
+			
+				<dl class="article-info muted">
+
+		
+			<dt class="article-info-term">
+									Подробности							</dt>
+
+			
+			
+			
+										<dd class="published">
+				<span class="icon-calendar"></span>
+				<time datetime="2016-12-28T17:20:00+00:00" itemprop="datePublished">
+					Опубликовано: 28 декабря 2016				</time>
+			</dd>					
+					
+			
+						</dl>
+	
+	
+				
+								<div itemprop="articleBody">
+		
+<p class="readmore"> </p>
+<img src="/images/seoul2.jpg" width="100%" alt="" /><br><br>
+<div style="text-align:justify;">
+<p>
+Накануне Новогодних праздников в Сеуле прошла международная олимпиада по ментальной арифметике
+</p>
+<p>Россию представляла школа ментальной арифметики Абакус. Наших ближайших соседей и друзей из Казахстана представляла ISMA Казахстан. У нас, как и у наших коллег из Ирана и Австралии, на международной олимпиаде 2016 года был статус наблюдателей. </p>
+<p>В первый день была встреча представителей стран-участников международной ассоциации ментальной арифметики. Во второй день в университете Sejong прошла сама олимпиада, состоявшаяся из двух этапов (абакус, ментальный счет) и флеш-чемпионата в пяти возрастных категориях. Больше всего победителей было из Тайваня, Малайзии, Гонконга.</p>
+<p>Наша делегация, как и делегации других стран, отметила высокий уровень проведения олимпиады. Школа ментальной арифметики Абукус выразила желание и готовность к дальнейшей  совместной работе теперь уже с участием своих юных гениев в следующей олимпиаде в Южно-Африканской Республике в декабре 2017 года.</p>
+<p>Очередная встреча представителей и педагогов из стран-членов международной ассоциации ментальной арифметики пройдет в Тайване в августе 2017 года, где помимо полезного семинара от гуру ментальной арифметики Мистера Девида (Mr. David), участники могут стать зрителями<a href="http://www.2017.taipei" target="_blank"> 29-й летней универсиады TAIPEI 2017.</a></p>
+</div>
+<br>
+
+
+<!-- JoomlaWorks "Simple Image Gallery Pro" Plugin (v3.0.7) starts here -->
+
+<ul id="sigProIdd6bcbda444" class="sigProContainer sigProClassic">
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/2016-12-27-17-26-52.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image 2016-12-27-17-26-52.JPG" title="Click to enlarge image 2016-12-27-17-26-52.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_2016-12-27-17-26-52.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/2016-12-28-09-22-16.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image 2016-12-28-09-22-16.JPG" title="Click to enlarge image 2016-12-28-09-22-16.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_2016-12-28-09-22-16.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/2016-12-28-09-28-31.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image 2016-12-28-09-28-31.JPG" title="Click to enlarge image 2016-12-28-09-28-31.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_2016-12-28-09-28-31.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/2016-12-28-09-30-56.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image 2016-12-28-09-30-56.JPG" title="Click to enlarge image 2016-12-28-09-30-56.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_2016-12-28-09-30-56.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/2016-12-28-09-34-21.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image 2016-12-28-09-34-21.JPG" title="Click to enlarge image 2016-12-28-09-34-21.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_2016-12-28-09-34-21.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/2016-12-28-10-03-23.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image 2016-12-28-10-03-23.JPG" title="Click to enlarge image 2016-12-28-10-03-23.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_2016-12-28-10-03-23.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/2016-12-28-10-03-45.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image 2016-12-28-10-03-45.JPG" title="Click to enlarge image 2016-12-28-10-03-45.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_2016-12-28-10-03-45.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/2016-12-28-10-14-49.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image 2016-12-28-10-14-49.JPG" title="Click to enlarge image 2016-12-28-10-14-49.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_2016-12-28-10-14-49.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/2016-12-28-10-55-43.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image 2016-12-28-10-55-43.JPG" title="Click to enlarge image 2016-12-28-10-55-43.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_2016-12-28-10-55-43.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/2016-12-28-10-58-47.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image 2016-12-28-10-58-47.JPG" title="Click to enlarge image 2016-12-28-10-58-47.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_2016-12-28-10-58-47.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/IMG_6134.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image IMG_6134.JPG" title="Click to enlarge image IMG_6134.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_img_6134.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/IMG_6182.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image IMG_6182.JPG" title="Click to enlarge image IMG_6182.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_img_6182.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/IMG_6234.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image IMG_6234.JPG" title="Click to enlarge image IMG_6234.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_img_6234.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProThumb">
+		<span class="sigProLinkOuterWrapper">
+			<span class="sigProLinkWrapper">
+				<a href="/images/seoul/IMG_6262.JPG" class="sigProLink fancybox-button" style="width:150px;height:150px;" rel="fancybox-button[galleryd6bcbda444]" title="" data-fresco-caption="" target="_blank">
+										<img class="sigProImg" src="/plugins/content/jw_sigpro/jw_sigpro/includes/images/transparent.gif" alt="Click to enlarge image IMG_6262.JPG" title="Click to enlarge image IMG_6262.JPG" style="width:150px;height:150px;background-image:url('/cache/jw_sigpro/jwsigpro_cache_d6bcbda444_img_6262.jpg');" />
+														</a>
+			</span>
+		</span>
+	</li>
+		<li class="sigProClear">&nbsp;</li>
+</ul>
+
+
+<div class="sigProPrintMessage">
+	View the embedded image gallery online at:
+	<br />
+	<a title="Олимпиада по ментал. арифметике в Сеуле" href="http://abakus-center.ru/about/news/95-seoul/?tmpl=component&print=1&page=#sigProIdd6bcbda444">http://abakus-center.ru/about/news/95-seoul/?tmpl=component&print=1&page=#sigProIdd6bcbda444</a>
+</div>
+
+<!-- JoomlaWorks "Simple Image Gallery Pro" Plugin (v3.0.7) ends here -->
+
+
+<!-- <strong><a href="http://www.ozon.ru/context/detail/id/139189043/">Купить книгу в OZON.ru</a></strong> <br> -->
+	</div>
+
+	
+							</div>
+	</div>
+</body>
+</html>

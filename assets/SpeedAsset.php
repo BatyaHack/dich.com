@@ -24,7 +24,7 @@ class SpeedAsset extends AssetBundle
     public $js = [
         "speed/static/js/bootstrap.min.js",
         "speed/static/js/device.js",
-        "speed/static/js/js/jquery-1.10.2.min.js",
+        "speed/static/js/jquery-1.10.2.min.js",
     ];
     public $depends = [
 

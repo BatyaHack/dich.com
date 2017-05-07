@@ -18,6 +18,6 @@ class PenController extends BehaviorsController
     public $layout = false;
     public function actionIndex()
     {
-        return $this->render('menar-dance.html');
+        return $this->render('menar-dance.php');
     }
 }

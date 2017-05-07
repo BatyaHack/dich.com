@@ -18,6 +18,6 @@ class AbacController extends BehaviorsController
     public $layout = false;
     public function actionIndex()
     {
-        return $this->render('game5.html');
+        return $this->render('game5.php');
     }
 }
