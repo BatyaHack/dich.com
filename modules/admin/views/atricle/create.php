@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Atricle */
 
-$this->title = 'Create Atricle';
+$this->title = 'Создать статью';
 $this->params['breadcrumbs'][] = ['label' => 'Atricles', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\AtricleSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Atricles';
+$this->title = 'Статьи';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="atricle-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Atricle', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Добавить статью', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -24,14 +24,25 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
-            'title',
-            'description',
-            'content',
-            'date',
+            [
+                'attribute'=>'title',
+                'label' => 'Заголовок'
+            ],
+            [
+                'attribute'=>'description',
+                'label' => 'Описание'
+            ],
+            [
+                'attribute'=>'content',
+                'label' => 'Содержание'
+            ],
+            [
+                'attribute'=>'date',
+                'label' => 'Дата публикации'
+            ],
             [
                 'format'=>'html',
-                'label'=>'Image',
+                'label'=>'Изображение',
                 'value'=>function($data){
                     return Html::img($data->getImage(), ['width' => 200]);
                 }
