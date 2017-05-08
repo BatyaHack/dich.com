@@ -28,12 +28,22 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
-            'curses_id',
-            'lecture_id',
-            'data_day',
-            'data_start_time',
-            'data_end_time',
+            [
+                'attribute'=>'curses_id',
+                'label' => 'ИД курсов'
+            ],
+            [
+                'attribute'=>'data_day',
+                'label' => 'День недели'
+            ],
+            [
+                'attribute'=>'data_start_time',
+                'label' => 'Начало курсов'
+            ],
+            [
+                'attribute'=>'data_end_time',
+                'label' => 'Конец курсов'
+            ],
         ],
     ]) ?>
 

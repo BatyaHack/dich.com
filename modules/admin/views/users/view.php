@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use \yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Users */
@@ -30,13 +31,27 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
-            'phone',
-            'name',
-            'date_of_birth',
-            'email:email',
-            'login',
-            'password',
+
+            [
+                'attribute'=> 'name',
+                'label'=>'Имя',
+            ],
+            [
+                'attribute'=>'date_of_birth',
+                'label'=>'Дата рождения',
+            ],
+            [
+                'attribute'=>'email',
+                'label'=>'Почта',
+            ],
+            [
+                'attribute'=>'login',
+                'label'=>'Логин',
+            ],
+            [
+                'attribute'=>'password',
+                'label'=>'Пароль',
+            ],
             [
                 'attribute' => 'cursesid',
                 'label' => 'Курсы',
@@ -126,7 +141,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     $.ajax(
                         {
                             type: 'POST',
-                            url: 'http://dich.com/admin/users/testtest',
+                            url: "<?=Url::to('testtest')?>",
                             data: 'id=' + dataArry,
                             success: function (response) {
                                 if(response === "OK")

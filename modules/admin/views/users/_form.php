@@ -14,20 +14,20 @@ use app\models\Curses;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'phone')->textInput() ?>
+    <?= $form->field($model, 'phone')->textInput()->label("Телефон") ?>
 
-    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'name')->textInput(['maxlength' => true])->label("Имя") ?>
 
-    <?= $form->field($model, 'date_of_birth')->textInput() ?>
+    <?= $form->field($model, 'date_of_birth')->textInput()->label("Дата рождения") ?>
 
-    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'email')->textInput(['maxlength' => true])->label("Почта") ?>
 
-    <?= $form->field($model, 'login')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'login')->textInput(['maxlength' => true])->label("Логин") ?>
 
-    <?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'password')->passwordInput(['maxlength' => true])->label("Пароль") ?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

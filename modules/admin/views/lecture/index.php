@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\LectureSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Lectures';
+$this->title = 'Аудитория';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="lecture-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Lecture', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Добавить аудиторию', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -24,8 +24,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
-            'name',
+            [
+                'attribute'=>'name',
+                'label' => 'Имя'
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
