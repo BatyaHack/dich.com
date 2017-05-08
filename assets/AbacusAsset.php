@@ -22,7 +22,6 @@ class AbacusAsset extends AssetBundle
     ];
     public $js = [
         "abac/js/easeljs-0.8.2.min.js",
-        "abac/js/game5.js",
     ];
     public $depends = [
 

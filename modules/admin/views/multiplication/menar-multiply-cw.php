@@ -4,10 +4,6 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
 
 \app\assets\MultiAsset::register($this);
 ?>
@@ -37,8 +33,6 @@ use app\assets\AppAsset;
         <title>Умножение-деление</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="bootstrap.min.css" media="screen">
-        <link rel="stylesheet" href="custom.min.css">
         <style>
             .black_style9{
                 background-color: black;
@@ -55,22 +49,22 @@ use app\assets\AppAsset;
             .black_style2{
                 background-color: black;
                 opacity: 0.8;
-                border-width:1;
+                border-width:1px;
                 color: white;
                 height:100%;
                 padding-top:0;
                 padding-bottom:0;
-                padding-left:6;
-                padding-right:6;
+                padding-left:6px;
+                padding-right:6px;
             }
             .very-big-size{
-                font-size: 53;
+                font-size: 53px;
             }
             .big-size{
-                font-size: 40;
+                font-size: 40px;
             }
             .small-size{
-                font-size: 25;
+                font-size: 25px;
             }
         </style>
     </head>
@@ -258,7 +252,7 @@ use app\assets\AppAsset;
                     </div>
                     <div class="panel-body">
                         <table  class="table black_style  panel-primary"  >
-                            <thead style= "font-size:12" >
+                            <thead style= "font-size:12px" >
 
                             <th id="name" class = "col-lg-1  "  style= "text-align:center"> Имя </th>
                             <th id="points" class = "col-lg-1 "  style= "text-align:center"> Балл </th>
@@ -972,10 +966,7 @@ use app\assets\AppAsset;
         }
 
     </script>
-    <script src="device.js"></script>
-    <script src="jquery-1.10.2.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script src="custom.js"></script>
+
     </body>
 
     </html>

@@ -35,15 +35,15 @@ use app\assets\AppAsset;
     <title>Счет на скорость</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="bootstrap3.css" media="screen">
-    <!-- <link rel="stylesheet" href="/static/css/buttons.css" media="screen"> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
     <style>
         .white_style{
             background-color: white;
             /*opacity: 0.99;*/
             color: #1a1a1a;
             box-shadow: none;
-            padding-bottom: 4;
+            padding-bottom: 4px;
         }
         .white_style8{
             background-color: white;
@@ -61,7 +61,7 @@ use app\assets\AppAsset;
             opacity: 0.9;
             color: white;
             box-shadow: none;
-            padding-bottom: 4;
+            padding-bottom: 4px;
         }
         .black_style> li > a {
             color: #dcdcdc;
@@ -92,16 +92,16 @@ use app\assets\AppAsset;
             <ul class="nav navbar-nav" id="navbar_parametrs">
                 <table style="margin: 0">
                     <div class="btn-group" style="text-transform: none; border-left: 1px solid #dcdcdc; float: left;">
-                        <a id = "wt0btn_module_1" class="btn btn-default white_style active" style="text-transform: none; width: 43" onclick = "change_module(1);" >П</a>
-                        <a id = "wt0btn_module_2" class="btn btn-default white_style" style="text-transform: none; width: 43" onclick = "change_module(2);" >Б</a>
-                        <a id = "wt0btn_module_3" class="btn btn-default white_style" style="text-transform: none; width: 43"onclick = "change_module(3);" >Д</a>
-                        <a id = "wt0btn_module_4" class="btn btn-default white_style" style="text-transform: none; width: 43" onclick = "change_module(4);" >К</a>
-                        <a id = "wt0btn_module_5" class="btn btn-default white_style" style="text-transform: none; width: 43" onclick = "change_module(5);" >R</a>
+                        <a id = "wt0btn_module_1" class="btn btn-default white_style active" style="text-transform: none; width: 43px" onclick = "change_module(1);" >П</a>
+                        <a id = "wt0btn_module_2" class="btn btn-default white_style" style="text-transform: none; width: 43px" onclick = "change_module(2);" >Б</a>
+                        <a id = "wt0btn_module_3" class="btn btn-default white_style" style="text-transform: none; width: 43px"onclick = "change_module(3);" >Д</a>
+                        <a id = "wt0btn_module_4" class="btn btn-default white_style" style="text-transform: none; width: 43px" onclick = "change_module(4);" >К</a>
+                        <a id = "wt0btn_module_5" class="btn btn-default white_style" style="text-transform: none; width: 43px" onclick = "change_module(5);" >R</a>
                     </div>
                     <div class="btn-group" style="border-left:1px solid #dcdcdc; float: left;">
-                        <a id = "wt0operation_0" class="btn btn-default white_style" style="text-transform: none; width: 56" onclick = "change_operation(0);" ><b>+</b></a>
-                        <a id = "wt0operation_1" class="btn btn-default white_style" style="text-transform: none; width: 56" onclick = "change_operation(1);" ><b>-</b></a>
-                        <a id = "wt0operation_2" class="btn btn-default white_style active" style="text-transform: none; width: 58" onclick = "change_operation(2);" ><b>+/-</b></a>
+                        <a id = "wt0operation_0" class="btn btn-default white_style" style="text-transform: none; width: 56px" onclick = "change_operation(0);" ><b>+</b></a>
+                        <a id = "wt0operation_1" class="btn btn-default white_style" style="text-transform: none; width: 56px" onclick = "change_operation(1);" ><b>-</b></a>
+                        <a id = "wt0operation_2" class="btn btn-default white_style active" style="text-transform: none; width: 58px" onclick = "change_operation(2);" ><b>+/-</b></a>
 
                         <!-- <a style="width: 170; text-transform: none;" class="btn btn-default white_style dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id = "navbar_operation_tablo">Сложение+Вычитание</a>
               <ul class="dropdown-menu white_style"  role="menu">
@@ -134,7 +134,7 @@ use app\assets\AppAsset;
                     </div>
                     <div class="btn-group" style="border-left:1px solid #dcdcdc; float: left;">
                         <a class="btn btn-default  white_style" onclick = "change_summands_num(false);"><</a>
-                        <a style="width: 80; text-transform: none;" class="btn btn-default white_style dropdown-toggle" data-toggle="dropdown" >слаг: <span id="navbar_summands_num_tablo"> 4 </span></a>
+                        <a style="width: 80px; text-transform: none;" class="btn btn-default white_style dropdown-toggle" data-toggle="dropdown" >слаг: <span id="navbar_summands_num_tablo"> 4 </span></a>
                         <ul class="dropdown-menu white_style">
                             <li><a href="#" onclick = "change_summands_num(0);" >Ввод</a></li>
                             <li class="divider"></li>
@@ -164,7 +164,7 @@ use app\assets\AppAsset;
                     </div>
                     <div class="btn-group" style="border-left:1px solid #dcdcdc; float: left;">
                         <a class="btn btn-default  white_style" onclick = "change_interval(false);"><</a>
-                        <a style="width: 80; text-transform: none;" class="btn btn-default white_style dropdown-toggle" data-toggle="dropdown" >сек: <span id="navbar_interval_tablo"> 1 </span></a>
+                        <a style="width: 80px; text-transform: none;" class="btn btn-default white_style dropdown-toggle" data-toggle="dropdown" >сек: <span id="navbar_interval_tablo"> 1 </span></a>
                         <ul class="dropdown-menu white_style">
                             <li><a href="#" onclick = "change_interval(0);" >Ввод</a></li>
                             <li class="divider"></li>
@@ -197,7 +197,7 @@ use app\assets\AppAsset;
                 </table>
 
                 <table style="margin: 0">
-                    <div class="btn-group btn-group-justified" style="border-left:1px solid #dcdcdc; float: left; width: 216">
+                    <div class="btn-group btn-group-justified" style="border-left:1px solid #dcdcdc; float: left; width: 216px">
                         <a class="btn btn-default hidden white_style" id = "wt0btn_1" onclick = "check_digit(1)">1</a>
                         <a class="btn btn-default hidden white_style" id = "wt0btn_2" onclick = "check_digit(2)">2</a>
                         <a class="btn btn-default hidden white_style" id = "wt0btn_3" onclick = "check_digit(3)">3</a>
@@ -209,7 +209,7 @@ use app\assets\AppAsset;
                         <a class="btn btn-default active white_style" id = "wt0btn_9" onclick = "check_digit(9)">9</a>
                         <a class="btn btn-default white_style" onclick = "check_all_digits();" >&#10004;</a>
                     </div>
-                    <div class="btn-group btn-group-justified" style="border-left:1px solid #dcdcdc; float: left; width: 171">
+                    <div class="btn-group btn-group-justified" style="border-left:1px solid #dcdcdc; float: left; width: 171px">
                         <a class="btn btn-default  white_style" style="width: 70%; text-transform: none;" id = "navbar_progress_mode" onclick = "change_progress_mode();">Прогресс</a>
                         <a class="btn btn-default  white_style active" style="width: 30%" id = "nabvar_btn_half" onclick = "change_half()">1/2</a>
                     </div>
@@ -253,7 +253,7 @@ use app\assets\AppAsset;
 
                     <div class="btn-group" style="border-left:1px solid #dcdcdc; float: left;">
                         <a class="btn btn-default  white_style" onclick = "change_fontsize_f(false);"><</a>
-                        <a class="btn btn-default  white_style" style="width: 80; text-transform: none;"  onclick = "change_fontsize_f(0); ">Размер:<span id="navbar_fontsize_tablo"> 50 </span> </a>
+                        <a class="btn btn-default  white_style" style="width: 80px; text-transform: none;"  onclick = "change_fontsize_f(0); ">Размер:<span id="navbar_fontsize_tablo"> 50 </span> </a>
                         <a class="btn btn-default  white_style" onclick = "change_fontsize_f(true);">></a>
                     </div>
                 </table>
@@ -266,20 +266,20 @@ use app\assets\AppAsset;
                 <a href="#" class="navbar-brand"  tabindex = "-1" id="btn_global_start" onclick = "Global_start();"><i class='fa fa-play' aria-hidden='true'></i></a>
 
                 <table >
-                    <div class="btn-group btn-group-justified" style="float: left; width: 80;">
+                    <div class="btn-group btn-group-justified" style="float: left; width: 80px;">
                         <a onclick = "change_background(); "  class="btn btn-default  white_style " tabindex = "-1" ><i class="fa fa-smile-o" aria-hidden="true"></i></a>
                         <a class="btn btn-default  white_style "  onclick = "show_settings(); "><i class="fa fa-gear" aria-hidden="true"></i></a>
                     </div>
                 </table>
                 <table >
-                    <div class="btn-group btn-group-justified" style="float: left;  width: 80">
+                    <div class="btn-group btn-group-justified" style="float: left;  width: 80px">
 
                         <a onclick = "change_style(); "  class="btn btn-default white_style"  tabindex = "-1" ><i class="fa fa-eye" aria-hidden="true"></i></a>
                         <a class="btn btn-default white_style" aria-hidden="true" onclick="full_screen_f()"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
                     </div>
                 </table>
                 <table >
-                    <div class="btn-group btn-group-justified" style="float: left; width: 80;">
+                    <div class="btn-group btn-group-justified" style="float: left; width: 80px;">
                         <a onclick = "restart(); "  class="btn btn-default  white_style " tabindex = "-1" ><i class="fa fa-refresh" aria-hidden="true"></i></a>
                         <a href="#" class="btn btn-default btn-sm white_style fa fa-volume-up" tabindex = "-1" onclick = "voice=!voice; $(this).toggleClass('fa-volume-off fa-volume-up') " ></a>
 
@@ -3714,9 +3714,6 @@ use app\assets\AppAsset;
 
 
 </script>
-<script src="static/js/device.js"></script>
-<script src="static/js/jquery-1.10.2.min.js"></script>
-<script src="static/js/bootstrap.min.js"></script>
 
 
 </body>

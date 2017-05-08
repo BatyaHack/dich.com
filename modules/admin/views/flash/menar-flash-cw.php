@@ -37,7 +37,6 @@ use app\assets\AppAsset;
         <title>Флэш карты</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="../../../../web/flash/css/bootstrap4.css" media="screen">
         <style>
             .white_style{
                 background-color: white;
@@ -485,7 +484,7 @@ use app\assets\AppAsset;
                     case 1:
                         $(bead_id).attr("state","none")
                         $(bead_id).css({
-                            "background": "url(<?=Url::to('@web/flash/custom/bus-black.png') ?>)",
+                            "background": "url('<?=Url::to('@web/flash/custom/bus-black.png') ?>')",
                             "background-size": "contain",
                             "background-repeat": "no-repeat",
                             "background-position": "top center"
@@ -1734,9 +1733,7 @@ use app\assets\AppAsset;
 
 
     </script>
-    <script src="../../../../web/flash/js/device.js"></script>
-    <script src="../../../../web/flash/js/jquery-1.10.2.min.js"></script>
-    <script src="../../../../web/flash/js/bootstrap.min.js"></script>
+
 
     </body>
 

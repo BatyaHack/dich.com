@@ -18,9 +18,11 @@ class MultiAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        "multi/static/css/bootstrap4.css",
+        "multi/static/css/bootstrap.min.css",
         "multi/static/css/custom.min.css",
         "multi/static/css/style2.css",
+        "multi/static/custom/css/chosen.css",
+        "multi/static/custom/css/daterangepicker.css",
     ];
     public $js = [
         "multi/static/js/bootstrap.min.js",

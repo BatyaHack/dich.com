@@ -21,7 +21,7 @@ class SpaceAsset extends AssetBundle
 
     ];
     public $js = [
-        "space/js/game4.js",
+        //"space/js/game4.js",
         "space/js/easeljs-0.8.2.min.js",
     ];
     public $depends = [

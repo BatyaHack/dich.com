@@ -34,8 +34,7 @@ use app\assets\AppAsset;
         <title>Столбцы</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="../../../../web/stolb/static/css/bootstrap3.css" media="screen">
-        <!-- <link rel="stylesheet" href="/static/css/custom.min.css"> -->
+
         <style>
             .white_style{
                 background-color: white;
@@ -2691,9 +2690,7 @@ use app\assets\AppAsset;
 
 
     </script>
-    <script src="js/device.js"></script>
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
 
 
     </body>
