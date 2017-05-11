@@ -11,13 +11,13 @@
   padding: 10px 20px;
   margin-top: 20px;
   color: white;
-  background-color: #9ec32d;
+  background-color: rgba(246,214,37, 1);
   font-size: 12px;
   display: inline-block;
   text-transform: uppercase;
 }
 #MapCont a:hover {
-  background-color: #03addb;
+  background-color: rgba(255,77,66, 1);
   text-decoration: none;
 }
 #MapCont .set_mar_bot {

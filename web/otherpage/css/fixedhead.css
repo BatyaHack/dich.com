@@ -21,6 +21,6 @@ menu a {
 }
 menu a:hover {
   text-decoration: none;
-  background-color: #29A3DD;
+  background-color: rgba(255,77,66, 1);
   color: white;
 }

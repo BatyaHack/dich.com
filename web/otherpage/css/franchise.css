@@ -18,7 +18,7 @@ p {
 }
 #greenBlock {
   width: 100%;
-  background-color: #9ec32d;
+  background-color: rgba(246,214,37, 1);
 }
 #greenBlock h1 {
   color: white;
@@ -51,7 +51,7 @@ p {
 }
 #dichCon .reviews {
   margin-top: 40px;
-  border: 1px solid #29a3dd;
+  border: 1px solid rgba(255,77,66, 1);
   padding: 20px;
 }
 #dichCon iframe {

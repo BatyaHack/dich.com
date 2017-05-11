@@ -7,3 +7,15 @@
   color: black;
   text-transform: uppercase;
 }
+
+#enrollherf a{
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: rgba(255,77,66, 1);
+  font-size: 14px;
+}
+#enrollherf a:hover{
+  background-color: rgba(246,214,37, 1);
+}

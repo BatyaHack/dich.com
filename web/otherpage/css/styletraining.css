@@ -17,12 +17,25 @@
   margin-bottom: -1px;
   padding: 8px 14px;
   text-decoration: none;
-  color: #0088cc;
+  color: rgba(255,77,66, 1);
   border: 1px solid #e5e5e5;
 }
 #dichCon .main-menu a:hover {
   background: #f5f5f5;
 }
+
+#enrollherf a{
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: rgba(255,77,66, 1);
+  font-size: 14px;
+}
+#enrollherf a:hover{
+  background-color: rgba(246,214,37, 1);
+}
+
 #dichCon .main-menu .sub-menu {
   position: absolute;
   margin: 0;
@@ -50,12 +63,12 @@
   position: absolute;
   width: 22px;
   height: 22px;
-  background: url(/home/img/Menu_Arrows.png) no-repeat;
+  background: url(/web/otherpage/img/Menu_Arrows.png) no-repeat;
   left: 340px;
   margin-top: -1px;
 }
 #dichCon .siteBarMenu li:hover {
-  color: #9EC32D;
+  color: rgba(246,214,37, 1);
   background-color: #fafafa;
 }
 #dichCon .siteBarMenu .turnArrow li {

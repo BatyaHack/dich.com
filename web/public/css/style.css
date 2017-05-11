@@ -130,7 +130,7 @@ header a:hover {
 #sendMessage {
   width: 100%;
   height: auto;
-  background-color: #ff4d42;
+  background-color:  rgba(130, 36, 48, 1);
 }
 #sendMessage h3 {
   padding-top: 30px;
@@ -140,7 +140,7 @@ header a:hover {
 #sendMessage input[type="text"] {
   border: 1px solid white;
   border-radius: 0;
-  background-color: #ff4d42;
+  background-color:  rgba(130, 36, 48, 1);
   text-align: left;
   color: white;
 }
@@ -150,7 +150,7 @@ header a:hover {
 #sendMessage input[type="submit"] {
   padding: 10px;
   color: white;
-  background-color: #ff4d42;
+  background-color:  rgba(130, 36, 48, 1);
   border: 1px solid white;
   text-transform: uppercase;
   margin-bottom: 50px;
@@ -170,7 +170,7 @@ header a:hover {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  background-color: #ff4d42;
+  background-color: rgba(130, 36, 48, 1);
   border-radius: 0;
 }
 #lessonMessage a:hover {
@@ -215,4 +215,14 @@ footer .social_linck a:nth-child(4) {
   height: 100% !important;
 }
 
+
+.carousel-control{
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+
+input::-webkit-input-placeholder {color: white;}
+input::-moz-placeholder          {color: white;}
+input:-moz-placeholder           {color: white;}
+input:-ms-input-placeholder      {color: white;}
 /*============    	АДАПТИВ    ===========*/
