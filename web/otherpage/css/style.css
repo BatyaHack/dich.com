@@ -213,4 +213,53 @@ input::-webkit-input-placeholder {color: white;}
 input::-moz-placeholder          {color: white;}
 input:-moz-placeholder           {color: white;}
 input:-ms-input-placeholder      {color: white;}
+
+
+
 /*============    	АДАПТИВ    ===========*/
+
+/*============ Мобильный телефон =========*/
+@media (max-width: 480px) {
+  header{
+    display: none;
+  }
+
+  menu{
+    box-sizing: border-box;
+
+    position: relative;
+    background-color: #953b39 !important;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+
+  menu img{
+    display: none;
+  }
+
+  menu .container{
+    width: 100%;
+
+    padding: 0;
+  }
+
+  menu a{
+    display: inline-block;
+    width: 100%;
+    margin: 5px !important;
+    float: left;
+
+  }
+
+  menu div .container{
+    display: flex;
+  }
+
+  .logo{
+    display: none;
+  }
+}
+/*===========================================*/
