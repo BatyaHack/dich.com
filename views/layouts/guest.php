@@ -7,6 +7,7 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
+use yii\helpers\Url;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
@@ -36,15 +37,8 @@ AppAsset::register($this);
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => [
-                ['label' => 'Новости', 'url' => ['/admin/atricle/index']],
                 ['label' => 'Игры', 'url' => ['/admin/game/index']],
-                ['label' => 'Ученики', 'url' => ['/admin/users/index']],
-                ['label' => 'Курсы', 'url' => ['/admin/curses/index']],
-                ['label' => 'Расписание', 'url' => ['/admin/classes/index']],
-                ['label' => 'Предметы', 'url' => ['/admin/subjects/index']],
-                ['label' => 'Группы', 'url' => ['/admin/group/index']],
-                ['label' => 'Аудитории', 'url' => ['/admin/lecture/index']],
-                ['label' => 'Учителя', 'url' => ['/admin/teacher/index']],
+                ['label' => 'Логин', 'url' => [Url::to('/site/login')]],
             ],
         ]);
         NavBar::end();
@@ -67,3 +61,10 @@ AppAsset::register($this);
     </body>
     </html>
 <?php $this->endPage() ?>
+<?php
+/**
+ * Created by PhpStorm.
+ * User: IlyaPC
+ * Date: 11.04.2017
+ * Time: 11:50
+ */

@@ -33,6 +33,7 @@ class TeacherController extends BehaviorsController
      */
     public function actionIndex()
     {
+
         $searchModel = new TeacherSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -41,6 +42,8 @@ class TeacherController extends BehaviorsController
             'dataProvider' => $dataProvider,
         ]);
     }
+
+
 
     /**
      * Displays a single Teacher model.
