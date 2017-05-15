@@ -75,7 +75,7 @@ use yii\helpers\Url;
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick = "close_hyese()">&times;</button>
                     <button onclick = "restart(); return false;"  class="close" tabindex = "-1" type="button" style=" margin-right:25px"  >♻   </button>
                     <button onclick = "change_background(); return false;"  class="close" tabindex = "-1" type="button" style=" margin-right:25px"  >☻   </button>
                     <h4 class="modal-title">Настройки </h4>
@@ -125,7 +125,7 @@ use yii\helpers\Url;
                 <div class="modal-footer">
                     <div class="panel-body">
                         <div class="panel-body">
-                            <button type="button" class="btn btn-success" data-dismiss="modal"> Применить</button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal" onclick="close_hyese()">Применить</button>
                         </div>
                     </div>
                 </div>
@@ -491,8 +491,13 @@ use yii\helpers\Url;
 
         }
         function button_settings_f(){
-            $('#modal_settings').modal('show');
+            $('#modal_settings').show();
         }
+
+        function close_hyese() {
+            $('#modal_settings').hide();
+        }
+
         var Kolprim = 0
         function create_table(k){
             if (device.mobile() || device.tablet()) {

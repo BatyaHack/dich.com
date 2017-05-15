@@ -37,7 +37,6 @@ StolbAsset::register($this);
     <title>Столбцы</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/static/css/bootstrap3.css" media="screen">
     <!-- <link rel="stylesheet" href="/static/css/custom.min.css"> -->
     <style>
         .white_style{
@@ -70,7 +69,7 @@ StolbAsset::register($this);
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="close_huese()">&times;</button>
                 <button onclick = "restart(); return false;"  class="close" tabindex = "-1" type="button" style=" margin-right:20px"  >♻   </button>
 
                 <h5 class="modal-title">Настройки  </h5>
@@ -150,7 +149,7 @@ StolbAsset::register($this);
             <div class="modal-footer">
                 <div class="panel-body">
                     <div class="panel-body">
-                        <button type="button" class="btn btn-success" data-dismiss="modal">Применить </button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal" onclick="close_huese()">Применить </button>
                     </div>
                 </div>
             </div>
@@ -809,7 +808,7 @@ StolbAsset::register($this);
 
         image_schotchik = random_between(1,27)
         var image_fon = "fon_" + image_schotchik + ".jpg";
-        document.body.style.backgroundImage = 'url(/static/custom/css/'+image_fon +')';
+        document.body.style.backgroundImage = 'url(<?=Url::to("@web/flash/custom/fon_1.jpg")?>)';
         image_schotchik = parseInt(image_schotchik);
     }
 
@@ -1041,7 +1040,7 @@ StolbAsset::register($this);
 
 
     function button_nastroyki_f(){
-        $('#modal_settings').modal('show');
+        $('#modal_settings').show();
     }
 
     function Kolslog_plus(){
@@ -2384,6 +2383,10 @@ StolbAsset::register($this);
             }
 
         }
+    }
+
+    function close_huese() {
+        $("#modal_settings").hide();
     }
 
     function calculate_combo_sub() {

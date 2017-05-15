@@ -66,7 +66,7 @@ use app\assets\AppAsset;
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="close_huese()">&times;</button>
                     <button onclick = "restart(); return false;"  class="close" tabindex = "-1" type="button" style=" margin-right:20px"  >♻   </button>
 
                     <h5 class="modal-title">Настройки  </h5>
@@ -183,7 +183,7 @@ use app\assets\AppAsset;
                 <div class="modal-footer">
                     <div class="panel-body">
                         <div class="panel-body">
-                            <button type="button" class="btn btn-success" data-dismiss="modal">Применить </button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal" onclick="close_huese()">Применить </button>
                         </div>
                     </div>
                 </div>
@@ -944,7 +944,11 @@ use app\assets\AppAsset;
 
 
     function button_nastroyki_f(){
-        $('#modal_settings').modal('show');
+        $('#modal_settings').show();
+    }
+
+    function close_huese() {
+        $('#modal_settings').hide();
     }
 
     function Kolslog_plus(){
