@@ -23,8 +23,8 @@ class StolbAsset extends AssetBundle
     ];
     public $js = [
         "stolb/bootstrap.min.js",
-        "stolb/device.js",
-        "stolb/js/jquery-1.10.2.min.js",
+        "stolb/js/device.js",
+        "stolb/jquery-1.10.2.min.js",
     ];
     public $depends = [
 

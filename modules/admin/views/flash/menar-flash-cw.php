@@ -60,7 +60,7 @@ use app\assets\AppAsset;
             }
         </style>
     </head>
-    <body style = "background-image: url(custom/fon_1.jpg); background-position: center center; background-repeat: no-repeat  ; background-size: cover " >
+    <body style = "background-image: url(<?=Url::to("@web/flash/custom/fon_1.jpg")?>); background-position: center center; background-repeat: no-repeat  ; background-size: cover " >
     <div id = "modal_settings" class="modal ">
         <div class="modal-dialog">
             <div class="modal-content ">
@@ -246,11 +246,11 @@ use app\assets\AppAsset;
                         </div>
                     </ul>
                     <div class="btn-group">
-                        <a onclick = "change_style(); return false;"  class="btn btn-sm  btn-default black_style"  id = "black_style_9"  tabindex = "-1" style = "font-size: 25;  border-width:0; box-shadow: none; ">S   </a>
-                        <a onclick = "change_background(); return false;"  class="btn btn-sm btn-default black_style" id = "black_style_10" tabindex = "-1" style = "font-size: 25;  border-width:0; box-shadow: none; ">☻   </a>
-                        <a  tabindex = "-1"  class="btn btn-sm btn-default black_style" id = "black_style_11" onclick = "restart(); return false;" style = "font-size: 25;  border-width:0; box-shadow: none; ">♻</a>
-                        <a  tabindex = "-1" id = "button_start" class="btn btn-sm btn-default black_style"   onclick = "start(); return false;" style = "font-size: 25;  border-width:0; box-shadow: none; ">►</a>
-                        <a  tabindex = "-1"  class="btn btn-sm btn-default black_style" id = "black_style_12" onclick = "button_nastroyki_f(); return false;"style = "font-size: 25;  border-width:0; box-shadow: none; ">&#9776</a>
+                        <a onclick = "change_style(); return false;"  class="btn btn-sm  btn-default black_style"  id = "black_style_9"  tabindex = "-1" style = "font-size: 25px;  border-width:0; box-shadow: none; ">S   </a>
+                        <a onclick = "change_background(); return false;"  class="btn btn-sm btn-default black_style" id = "black_style_10" tabindex = "-1" style = "font-size: 25px;  border-width:0; box-shadow: none; ">☻   </a>
+                        <a  tabindex = "-1"  class="btn btn-sm btn-default black_style" id = "black_style_11" onclick = "restart(); return false;" style = "font-size: 25px;  border-width:0; box-shadow: none; ">♻</a>
+                        <a  tabindex = "-1" id = "button_start" class="btn btn-sm btn-default black_style"   onclick = "start(); return false;" style = "font-size: 25px;  border-width:0; box-shadow: none; ">►</a>
+                        <a  tabindex = "-1"  class="btn btn-sm btn-default black_style" id = "black_style_12" onclick = "button_nastroyki_f(); return false;"style = "font-size: 25px;  border-width:0; box-shadow: none; ">&#9776</a>
                     </div>
                 </ul>
             </div>
@@ -1616,8 +1616,8 @@ use app\assets\AppAsset;
             //     image_schotchik++;
             // }
             image_schotchik = 1 + randomInteger(26)
-            var image_fon = "fon_" + image_schotchik + ".jpg";
-            document.body.style.backgroundImage = 'url(custom/'+image_fon +')';
+            var image_fon = "fon_1.jpg";
+            document.body.style.backgroundImage = '<?=Url::to("@web/flash/custom/fon_1.jpg")?>';
             image_schotchik = parseInt(image_schotchik);
         }
 

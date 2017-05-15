@@ -4,6 +4,7 @@
 /* @var $content string */
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 
 \app\assets\MultiAsset::register($this);
 ?>
@@ -68,7 +69,7 @@ use yii\helpers\Html;
             }
         </style>
     </head>
-    <body style = "background-image: url(/web/multi/static/custom/css/fon_1.jpg); background-position: center center; background-repeat: no-repeat  ; background-size: cover ;">
+    <body style = "background-image: url(<?=Url::to("@web/flash/custom/fon_1.jpg")?>); background-position: center center; background-repeat: no-repeat  ; background-size: cover ;">
 
     <div id = "modal_settings" class="modal">
         <div class="modal-dialog">
@@ -891,7 +892,7 @@ use yii\helpers\Html;
             // }
             image_schotchik = 1 + randomInteger(26)
             var image_fon = "fon_" + image_schotchik + ".jpg";
-            document.body.style.backgroundImage = 'url(static/custom/css/'+image_fon +')';
+            document.body.style.backgroundImage = 'url(<?=Url::to("@web/flash/custom/fon_1.jpg")?>)';
             image_schotchik = parseInt(image_schotchik);
         }
 

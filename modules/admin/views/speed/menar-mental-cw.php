@@ -6,6 +6,7 @@
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
+use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
@@ -909,7 +910,7 @@ use app\assets\AppAsset;
     function change_background(){
         image_schotchik = random_between(1,27)
         var image_fon = "fon_" + image_schotchik + ".jpg";
-        document.body.style.backgroundImage = 'url(/static/custom/css/'+image_fon +')';
+        document.body.style.backgroundImage = 'url(<?=Url::to("@web/flash/custom/fon_1.jpg")?>)';
         image_schotchik = parseInt(image_schotchik);
     }
 
