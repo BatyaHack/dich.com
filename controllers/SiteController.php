@@ -78,6 +78,8 @@ class SiteController extends Controller
             ->limit($pagination->limit)
             ->all();
 
+        $articles = array_reverse($articles);
+
         return $this->render('index.php', [
             'articles' => $articles,
             'pagination' => $pagination

@@ -786,7 +786,7 @@ use app\assets\AppAsset;
                     break;
 
             }
-            audio.src = "/static/custom/audio/" + music;
+            audio.src = "<?= Url::to("@web/music/") ?>" + music;
             audio.play()
         }
         else {audio.pause();
@@ -795,11 +795,11 @@ use app\assets\AppAsset;
 
     function soundClick(n) {
         if (chered == true) {
-            audio.src = "/static/custom/audio/new_sound_"+n.toString() + '.mp3'
+            audio.src = "<?= Url::to("@web/music")?>/new_sound_"+n.toString() + '.mp3'
             audio.play()
         }
         else{
-            audio2.src = "/static/custom/audio/new_sound_"+n.toString() + '.mp3'
+            audio2.src = "<?= Url::to("@web/music")?>/new_sound_"+n.toString() + '.mp3'
             audio2.play()
         }
         chered = !chered
@@ -812,38 +812,38 @@ use app\assets\AppAsset;
         for (var i=1; i<=8; i++) interval[i] = 1000;
         for (var i=1;i<=47;i++ ){
             var audio = document.createElement('audio');
-            src = "/static/custom/audio/new_incorrect-"+ i + ".mp3"
+            src = "<?= Url::to("@web/music")?>/new_incorrect-"+ i + ".mp3"
             audio.setAttribute('src',src);
             audio.setAttribute('preload','preload');
         }
         for (var i=1;i<=17;i++ ){
             var audio = document.createElement('audio');
-            src = "/static/custom/audio/new_correct-"+ i + ".mp3"
+            src = "<?= Url::to("@web/music")?>/new_correct-"+ i + ".mp3"
             audio.setAttribute('src',src);
             audio.setAttribute('preload','preload');
         }
         for (var i=1;i<=57;i++ ){
             var audio = document.createElement('audio');
-            src = "/static/custom/audio/new_present-"+ i + ".mp3"
+            src = "<?= Url::to("@web/music")?>/new_present-"+ i + ".mp3"
             audio.setAttribute('src',src);
             audio.setAttribute('preload','preload');
         }
         for (var i=1;i<=4;i++ ){
             var audio = document.createElement('audio');
-            src = "/static/custom/audio/new_snd_"+ i + ".mp3"
+            src = "<?= Url::to("@web/music")?>/new_snd_"+ i + ".mp3"
             audio.setAttribute('src',src);
             audio.setAttribute('preload','preload');
         }
 
         for (var i=1;i<=99;i++ ){
             var audio = document.createElement('audio');
-            src = "/static/custom/audio/numbers/gplus_"+ i + ".mp3"
+            src = "<?= Url::to("@web/music")?>/gplus_"+ i + ".mp3"
             audio.setAttribute('src',src);
             audio.setAttribute('preload','preload');
         }
         for (var i=1;i<=99;i++ ){
             var audio = document.createElement('audio');
-            src = "/static/custom/audio/numbers/gminus_"+ i + ".mp3"
+            src = "<?= Url::to("@web/music")?>/gminus_"+ i + ".mp3"
             audio.setAttribute('src',src);
             audio.setAttribute('preload','preload');
         }
@@ -1867,11 +1867,11 @@ use app\assets\AppAsset;
 
 
         if (chered == true) {
-            audio.src = '/static/custom/audio/numbers/' + sound_number;
+            audio.src = '<?= Url::to("@web/music")?>/' + sound_number;
             audio.play();
         }
         else{
-            audio2.src = '/static/custom/audio/numbers/' + sound_number;
+            audio2.src = '<?= Url::to("@web/music")?>/' + sound_number;
             audio2.play();
         }
         chered = !chered;

@@ -933,7 +933,7 @@ use yii\helpers\Url;
                         break;
 
                 }
-                audio.src = "static/custom/audio/" + music;
+                audio.src = "<?= Url::to("@web/music/")?>" + music;
                 audio.autoplay = true;
             }
             else audio.autoplay = false;
@@ -943,11 +943,11 @@ use yii\helpers\Url;
         var chered = true;
         function soundClick(n) {
             if (chered == true) {
-                audio.src = "static/custom/audio/new_sound_"+n.toString() + '.mp3'
+                audio.src = "<?= Url::to("@web/music")?>/new_sound_"+n.toString() + '.mp3'
                 audio.play()
             }
             else{
-                audio2.src = "static/custom/audio/new_sound_"+n.toString() + '.mp3'
+                audio2.src = "<?= Url::to("@web/music")?>/new_sound_"+n.toString() + '.mp3'
                 audio2.play()
             }
             chered = !chered

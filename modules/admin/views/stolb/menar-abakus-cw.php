@@ -965,25 +965,25 @@ StolbAsset::register($this);
         create_columns(6)
         for (var i=1;i<=47;i++ ){
             var audio = document.createElement('audio');
-            src = "/static/custom/audio/new_incorrect-"+ i + ".mp3"
+            src = "<?= Url::to("@web/music")?>/new_incorrect-"+ i + ".mp3"
             audio.setAttribute('src',src);
             audio.setAttribute('preload','preload');
         }
         for (var i=1;i<=17;i++ ){
             var audio = document.createElement('audio');
-            src = "/static/custom/audio/new_correct-"+ i + ".mp3"
+            src = "<?= Url::to("@web/music")?>/new_correct-"+ i + ".mp3"
             audio.setAttribute('src',src);
             audio.setAttribute('preload','preload');
         }
         for (var i=1;i<=57;i++ ){
             var audio = document.createElement('audio');
-            src = "/static/custom/audio/new_present-"+ i + ".mp3"
+            src = "<?= Url::to("@web/music")?>/new_present-"+ i + ".mp3"
             audio.setAttribute('src',src);
             audio.setAttribute('preload','preload');
         }
         for (var i=1;i<=4;i++ ){
             var audio = document.createElement('audio');
-            src = "/static/custom/audio/new_snd_"+ i + ".mp3"
+            src = "<?= Url::to("@web/music")?>/new_snd_"+ i + ".mp3"
             audio.setAttribute('src',src);
             audio.setAttribute('preload','preload');
         }
@@ -1507,7 +1507,7 @@ StolbAsset::register($this);
                     break;
 
             }
-            audio.src = "/static/custom/audio/" + music;
+            audio.src = "<?= Url::to("@web/music/")?>" + music;
             audio.play()
         }
         else {audio.pause();
@@ -1516,11 +1516,11 @@ StolbAsset::register($this);
 
     function soundClick(n) {
         if (chered == true) {
-            audio.src = "/static/custom/audio/new_sound_"+n.toString() + '.mp3'
+            audio.src = "<?= Url::to("@web/music")?>/new_sound_"+1 + '.mp3'
             audio.play()
         }
         else{
-            audio2.src = "/static/custom/audio/new_sound_"+n.toString() + '.mp3'
+            audio2.src = "<?= Url::to("@web/music")?>/new_sound_"+1 + '.mp3'
             audio2.play()
         }
         chered = !chered
