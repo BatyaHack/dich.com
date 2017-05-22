@@ -1,3 +1,7 @@
+<?php
+use yii\helpers\Url;
+?>
+
 <!--Верхняя шпка-->
 <menu>
     <div class="container">
@@ -6,12 +10,12 @@
                 <img src="#" alt="лого" width="200" height="100">
             </div>
             <div class="col-md-10 menu_button">
-                <a href="/site">Абакус</a>
-                <a href="/seminar">Семинары</a>
-                <a href="/training">Обучение</a>
-                <a href="#" class="current_page">Франшиза</a>
-                <a href="/contacts">Контакты абакус</a>
-                <a href="/admin">Личный кабинет</a>
+                <a href="<?=Url::toRoute(['site/index'])?>">Абакус</a>
+                <a href="<?=Url::toRoute(['seminar/index'])?>">Семинары</a>
+                <a href="<?=Url::toRoute(['training/index'])?>">Обучение</a>
+                <a href="<?=Url::toRoute(['franchise/index'])?>" class="current_page">Франшиза</a>
+                <a href="<?=Url::toRoute(['contacts/index'])?>">Контакты абакус</a>
+                <a href="<?=Url::toRoute(['/admin'])?>">Личный кабинет</a>
             </div>
         </div>
     </div>
@@ -155,41 +159,44 @@
                     <ul>
                         <li class="topList">АБАКУС
                             <ul class="dropList">
-                                <li>Ссылка 1</li>
-                                <li>Ссылка 2</li>
-                                <li>Ссылка 3</li>
+                                <li><a class="menu_link" href="/site/index">Главная</a></li>
                             </ul>
                         </li>
                         <li class="topList">СЕМИНАРЫ
                             <ul class="hiddenBlock">
-                                <li>Ссылка 1</li>
-                                <li>Ссылка 2</li>
-                                <li>Ссылка 3</li>
+                                <li><a class="menu_link" href="/web/seminar">Семинары</a></li>
                             </ul>
                         </li>
                         <li class="topList">ОБУЧЕНИЕ
                             <ul class="hiddenBlock">
-                                <li>Ссылка 1</li>
-                                <li>Ссылка 2</li>
-                                <li>Ссылка 3</li>
+                                <li><a class="menu_link" href="/web/training">Обучение</a></li>
                             </ul>
                         </li>
                         <li class="topList">ФРАНШИЗА
                             <ul class="hiddenBlock">
-                                <li>Ссылка 1</li>
-                                <li>Ссылка 2</li>
-                                <li>Ссылка 3</li>
+                                <li><a class="menu_link" href="/web/franchise">Франшиза</a></li>
                             </ul>
                         </li>
                         <li class="topList">ЛИЧНЫЙ КАБИНЕТ
                             <ul class="hiddenBlock">
-                                <li>Ссылка 1</li>
-                                <li>Ссылка 2</li>
-                                <li>Ссылка 3</li>
+                                <li><a class="menu_link" href="/web/admin">Личный кабинет</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
+
+                <style>
+                    .menu_link{
+                        margin-top: 5px;
+                        padding: 5px!important;
+                        background: none !important;
+                        color: #1a1a1a !important;
+                    }
+
+                    .menu_link:hover{
+                        color: #953b39 !important;
+                    }
+                </style>
                 <div class="reviews">
                     <h2>ОТЗЫВЫ НАШИХ ПАРТНЕРОВ</h2>
                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/zaCBW5JQ_Zo" frameborder="0" allowfullscreen></iframe>

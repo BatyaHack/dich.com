@@ -1,3 +1,7 @@
+<?php
+use yii\helpers\Url;
+?>
+
 <!--Верхняя шпка-->
 <menu>
     <div class="container">
@@ -6,12 +10,12 @@
                 <img src="/web/public/img/logo.png" alt="лого" width="200" height="100">
             </div>
             <div class="col-md-10 menu_button">
-                <a href="/web/index.html">Абакус</a>
-                <a href="#" class="current_page">Семинары</a>
-                <a href="/web/training">Обучение</a>
-                <a href="/web/franchise">Франшиза</a>
-                <a href="/web/contacts">Контакты абакус</a>
-                <a href="#">Личный кабинет</a>
+                <a href="<?=Url::toRoute(['site/index'])?>">Абакус</a>
+                <a href="<?=Url::toRoute(['seminar/index'])?>">Семинары</a>
+                <a href="<?=Url::toRoute(['training/index'])?>">Обучение</a>
+                <a href="<?=Url::toRoute(['franchise/index'])?>">Франшиза</a>
+                <a href="<?=Url::toRoute(['contacts/index'])?>">Контакты абакус</a>
+                <a href="<?=Url::toRoute(['/admin'])?>">Личный кабинет</a>
             </div>
         </div>
     </div>

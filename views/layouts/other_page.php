@@ -72,12 +72,12 @@ use \app\controllers\NewsController;
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="nav_linck">
-                        <a href="#">Главная</a>
-                        <a href="#">Обучение</a>
-                        <a href="#">Семинары</a>
-                        <a href="#">Франшиза</a>
-                        <a href="#">Наши центры</a>
-                        <a href="#">Контакты</a>
+                        <a href="/site/index">Главная</a>
+                        <a href="/web/training">Обучение</a>
+                        <a href="/web/seminar">Семинары</a>
+                        <a href="/web/franchise">Франшиза</a>
+                        <a href="/web/map/index">Наши центры</a>
+                        <a href="/web/contacts">Контакты</a>
                     </div>
 
                     <p>2017. Ментальная арифметика Абакус | Курсы ментальной арифметики.</p>
