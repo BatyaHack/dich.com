@@ -10,11 +10,11 @@ use yii\helpers\Url;
                 <img src="<?=Url::to("@web/logo_site/logo.png")?>" alt="лого" width="200" height="100">
             </div>
             <div class="col-md-10 menu_button">
-                <a href="<?=Url::toRoute(['site/index'])?>">Абакус</a>
+                <a href="<?=Url::toRoute(['site/index'])?>">Ментальная Арифметика</a>
                 <a href="<?=Url::toRoute(['seminar/index'])?>">Семинары</a>
                 <a href="<?=Url::toRoute(['training/index'])?>">Обучение</a>
                 <a href="<?=Url::toRoute(['franchise/index'])?>" class="current_page">Франшиза</a>
-                <a href="<?=Url::toRoute(['contacts/index'])?>">Контакты абакус</a>
+                <a href="<?=Url::toRoute(['contacts/index'])?>">Контакты</a>
                 <a href="<?=Url::toRoute(['/admin'])?>">Личный кабинет</a>
             </div>
         </div>
@@ -95,7 +95,7 @@ use yii\helpers\Url;
                     <div class="col-md-2 text-center">
                         <h1>10</h1>
                         <b>стран</b>
-                        <p>где работает Абакус</p>
+                        <p>где работает Ментальная Арифметика</p>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@ use yii\helpers\Url;
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <h1>ПАРТНЕРСТВО С АБАКУС-ЦЕНТРОМ </h1>
+                <h1>ПАРТНЕРСТВО С Ментальная Арифметика-ЦЕНТРОМ </h1>
 
                 <h2>ЧТО ВЫ ПОЛУЧАЕТЕ</h2>
 
@@ -157,7 +157,7 @@ use yii\helpers\Url;
                 <h2>Меню сайта</h2>
                 <div class="siteBarMenu">
                     <ul>
-                        <li class="topList">АБАКУС
+                        <li class="topList">Ментальная Арифметика
                             <ul class="dropList">
                                 <li><a class="menu_link" href="/site/index">Главная</a></li>
                             </ul>

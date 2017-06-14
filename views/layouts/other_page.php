@@ -80,7 +80,7 @@ use \app\controllers\NewsController;
                         <a href="/web/contacts">Контакты</a>
                     </div>
 
-                    <p>2017. Ментальная арифметика Абакус | Курсы ментальной арифметики.</p>
+                    <p>2017. Ментальная арифметика | Курсы ментальной арифметики.</p>
                     <div class="social_linck">
                         <a href="#"></a>
                         <a href="#"></a>

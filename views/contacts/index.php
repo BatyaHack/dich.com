@@ -11,11 +11,11 @@ use yii\helpers\Url;
                 <img src="<?=Url::to("@web/logo_site/logo.png")?>" alt="лого" width="200" height="100">
             </div>
             <div class="col-md-10 menu_button">
-                <a href="<?=Url::toRoute(['site/index'])?>">Абакус</a>
+                <a href="<?=Url::toRoute(['site/index'])?>">Ментальная Арифметика</a>
                 <a href="<?=Url::toRoute(['seminar/index'])?>">Семинары</a>
                 <a href="<?=Url::toRoute(['training/index'])?>">Обучение</a>
                 <a href="<?=Url::toRoute(['franchise/index'])?>">Франшиза</a>
-                <a href="<?=Url::toRoute(['contacts/index'])?>" class="current_page">Контакты абакус</a>
+                <a href="<?=Url::toRoute(['contacts/index'])?>" class="current_page">Контакты</a>
                 <a href="<?=Url::toRoute(['/admin'])?>">Личный кабинет</a>
             </div>
         </div>
@@ -41,19 +41,19 @@ use yii\helpers\Url;
                     </div>
                     <div class="col-md-6">
                         <a class="btn btn-block" href="<?=Url::toRoute(['map/index'])?>">
-                            Центры Абакус по Москве
+                            Центры по Москве
                         </a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
                         <a class="btn btn-block" href="<?=Url::toRoute(['map/index'])?>">
-                            Центры Абакус по России
+                            Центры по России
                         </a>
                     </div>
                     <div class="col-md-6">
                         <a class="btn btn-block" href="<?=Url::toRoute(['map/index'])?>">
-                            Центры Абакус по СНГ
+                            Центры по СНГ
                         </a>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ use yii\helpers\Url;
                 <h2>Меню сайта</h2>
                 <div class="siteBarMenu">
                     <ul>
-                        <li class="topList">АБАКУС
+                        <li class="topList">Ментальная Арифметика
                             <ul class="dropList">
                                 <li><a class="menu_link" href="/site/index">Главная</a></li>
                             </ul>
