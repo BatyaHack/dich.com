@@ -118,7 +118,7 @@ header a:hover {
   color: white;
   text-transform: uppercase;
   display: inline-block;
-  background-color: rgba(130, 36, 48, 1);
+  background-color: #953b39;
   font-size: 14px;
 }
 #dichCon a:hover {
@@ -168,7 +168,7 @@ header a:hover {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  background-color: rgba(130, 36, 48, 1);
+  background-color: #953b39;
   border-radius: 0;
 }
 #lessonMessage a:hover {

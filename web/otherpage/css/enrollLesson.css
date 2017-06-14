@@ -1,15 +1,16 @@
 #dichCon input[type="text"] {
-  border: 1px solid rgba(255,77,66, 1);
+
+  background-color: #953b39;
   border-radius: 0;
   margin-bottom: 20px;
   padding: 10px 20px;
   text-align: left;
-  color: rgba(255,77,66, 1);
+  color: white;
 }
 #dichCon input[type="submit"] {
   float: right;
   padding: 10px 20px;
-  background-color: rgba(255,77,66, 1);
+  background-color: #953b39;
   color: white;
   text-transform: uppercase;
   border: none;

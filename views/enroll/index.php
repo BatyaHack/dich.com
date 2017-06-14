@@ -7,7 +7,7 @@ use yii\helpers\Url;
     <div class="container">
         <div class="row">
             <div class="col-md-2">
-                <img src="#" alt="лого" width="200" height="100">
+                <img src="<?=Url::to("@web/logo_site/logo.png")?>" alt="лого" width="200" height="100">
             </div>
             <div class="col-md-10 menu_button">
                 <a href="<?=Url::toRoute(['site/index'])?>">Абакус</a>
@@ -35,7 +35,7 @@ use yii\helpers\Url;
                 <div class="row">
                     <h3>ЗАНЯТИЯ ПО МЕНТАЛЬНОЙ АРИФМЕТИКЕ</h3>
                     <h4>ДЛЯ ЗАПИСИ НА ЗАНЯТИЯ ЗАПОЛНИТЕ ФОРМУ ОБРАТНОЙ СВЯЗИ</h4>
-                    <form action="#">
+                    <form class="enroll_form" action="#">
                         <div class="form-group">
                             <input class="btn btn-block" type="text" placeholder="Ваше имя">
                         </div>
@@ -115,6 +115,7 @@ use yii\helpers\Url;
                     .menu_link:hover{
                         color: #953b39 !important;
                     }
+
                 </style>
                 <h2>Мы на канале YouTube</h2>
                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/zaCBW5JQ_Zo" frameborder="0" allowfullscreen></iframe>

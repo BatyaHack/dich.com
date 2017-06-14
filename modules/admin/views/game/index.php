@@ -74,7 +74,7 @@ use yii\helpers\Url;
     </div>
 
     <div class="href_elem">
-        <a href="<?=Url::toRoute('slow/index')?>"><img src="<?=Url::to('@web/index_game/img/mental.png')?>" alt="game_icon" width="150"></a>
+        <a href="<?=Url::toRoute('slow/index')?>"><img src="<?=Url::to('@web/index_game/img/mental2.png')?>" alt="game_icon" width="150"></a>
         <a class="link_elem" href="<?=Url::toRoute('slow/index')?>">Скорость бета</a>
     </div>
 

@@ -8,7 +8,7 @@ use yii\helpers\Url;
     <div class="container">
         <div class="row">
             <div class="col-md-2">
-                <img src="#" alt="лого" width="200" height="100">
+                <img src="<?=Url::to("@web/logo_site/logo.png")?>" alt="лого" width="200" height="100">
             </div>
             <div class="col-md-10 menu_button">
                 <a href="<?=Url::toRoute(['site/index'])?>">Абакус</a>
@@ -64,7 +64,7 @@ use yii\helpers\Url;
 
                 <style>
                     #enroll{
-                        padding: 10px !important;
+                        padding: 10px 20px !important;
                     }
                 </style>
 
