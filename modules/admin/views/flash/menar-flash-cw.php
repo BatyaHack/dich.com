@@ -28,7 +28,21 @@ use app\assets\AppAsset;
 
 <div class="wrap">
 
-
+    <style>
+        #abakus_1number_0,
+        #abakus_1number_1,
+        #abakus_1number_2,
+        #abakus_1number_3,
+        #abakus_1number_4,
+        #abakus_1number_5,
+        #abakus_1number_6,
+        #abakus_1number_7,
+        #abakus_1number_8,
+        #abakus_1number_9,
+        #abakus_1number_10{
+            font-size: 60px !important;
+        }
+    </style>
 
     <html style = "height: 100% ; width:100%; ">
 
@@ -157,7 +171,7 @@ use app\assets\AppAsset;
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <button onclick = "change_background(); return false;"  class="navbar-toggle collapsed" data-toggle="collapse"  tabindex = "-1" type="button" style="margin:0; padding-top:4; padding-bottom:0; font-size:30"> ☻   </button>
+                <button onclick = "customChangeFon(); return false;"  class="navbar-toggle collapsed" data-toggle="collapse"  tabindex = "-1" type="button" style="margin:0; padding-top:4; padding-bottom:0; font-size:30"> ☻   </button>
                 <a id = "navbar_logo"  tabindex = "-1" class="navbar-brand" href="/games" style = "width: 110px; background:url(/static/custom/css/logo_rus.png) ; background-position: center center; background-repeat: no-repeat; background-size: contain  "></a>
             </div>
 
@@ -279,11 +293,11 @@ use app\assets\AppAsset;
                         </div>
                     </ul>
                     <div class="btn-group">
-                        <a onclick = "change_style(); return false;"  class="btn btn-sm  btn-default black_style"  id = "black_style_9"  tabindex = "-1" style = "font-size: 25;  border-width:0; box-shadow: none; ">S   </a>
-                        <a onclick = "change_background(); return false;"  class="btn btn-sm btn-default black_style" id = "black_style_10" tabindex = "-1" style = "font-size: 25;  border-width:0; box-shadow: none; ">☻   </a>
-                        <a  tabindex = "-1"  class="btn btn-sm btn-default black_style" id = "black_style_11" onclick = "restart(); return false;" style = "font-size: 25;  border-width:0; box-shadow: none; ">♻</a>
-                        <a  tabindex = "-1" id = "button_start" class="btn btn-sm btn-default black_style"   onclick = "start(); return false;" style = "font-size: 25;  border-width:0; box-shadow: none; ">►</a>
-                        <a  tabindex = "-1"  class="btn btn-sm btn-default black_style" id = "black_style_12" onclick = "button_nastroyki_f(); return false;"style = "font-size: 25;  border-width:0; box-shadow: none; ">&#9776</a>
+                        <a onclick = "change_style(); return false;"  class="btn btn-sm  btn-default black_style"  id = "black_style_9"  tabindex = "-1" style = "font-size: 25px;  border-width:0; box-shadow: none; ">S   </a>
+                        <a onclick = "customChangeFon(); return false;"  class="btn btn-sm btn-default black_style" id = "black_style_10" tabindex = "-1" style = "font-size: 25px;  border-width:0; box-shadow: none; ">☻   </a>
+                        <a  tabindex = "-1"  class="btn btn-sm btn-default black_style" id = "black_style_11" onclick = "restart(); return false;" style = "font-size: 25px;  border-width:0; box-shadow: none; ">♻</a>
+                        <a  tabindex = "-1" id = "button_start" class="btn btn-sm btn-default black_style"   onclick = "start(); return false;" style = "font-size: 25px;  border-width:0; box-shadow: none; ">►</a>
+                        <a  tabindex = "-1"  class="btn btn-sm btn-default black_style" id = "black_style_12" onclick = "button_nastroyki_f(); return false;"style = "font-size: 25px;  border-width:0; box-shadow: none; ">&#9776</a>
                     </div>
                 </ul>
             </div>
@@ -1579,7 +1593,7 @@ use app\assets\AppAsset;
                 var abakus_empty_id = "abakus_empty_" + i.toString();
                 var abakus_empty=document.createElement('div');
                 height = 7*parseInt($("#abakus_1beads_1bead_1").css("height")) + parseInt($("#abakus_1number_1").css("height")) + 18
-                style_ab = "margin:0; height:" + height+ "; text-align:center; font-size:30;"
+                style_ab = "margin:0; height:" + height+ "; text-align:center; font-size:30px;"
                 $(abakus_empty).attr({
                     id: abakus_empty_id,
                     style: style_ab,
@@ -1596,7 +1610,7 @@ use app\assets\AppAsset;
                     class: 'form-control ',
                     type: "text",
                     value: "",
-                    style: "font-size:130; text-align: center; height:130px;  border: 1px solid #808080; border-radius:3px; opacity: 0.97;",
+                    style: "font-size:100px; text-align: center; height:130px;  border: 1px solid #808080; border-radius:3px; opacity: 0.97;",
                 });
                 if (n>=4 || device.tablet() || device.mobile() ) {
                     if (device.tablet() || device.mobile() ){
@@ -1604,7 +1618,7 @@ use app\assets\AppAsset;
                         $("#keyboard").removeClass("hidden")
                     }
                     $(answerbox).css({
-                        "font-size":"20",
+                        "font-size":"20px",
                         "height":"30",
                     })
                 }
@@ -1644,15 +1658,26 @@ use app\assets\AppAsset;
 
         var image_schotchik = 0;
         function change_background(){
-            // if (image_schotchik > 26) image_schotchik = 1;
-            // else{
-            //     image_schotchik++;
-            // }
-            image_schotchik = 1 + randomInteger(26)
+            if (image_schotchik > 26) image_schotchik = 1;
+            else{
+                image_schotchik++;
+            }
+            image_schotchik = 1 + randomInteger(26);
             var image_fon = "fon_" + image_schotchik + ".jpg";
-            document.body.style.backgroundImage = 'url(<?=Url::to("@web/flash/custom/fon_1.jpg")?>)';
+            document.body.style.backgroundImage = 'url(<?php
+                    $number_fon = rand(1, 27);
+                    echo Url::to("@web/flash/custom/fon_".$number_fon.".jpg")
+                    ?>)';
             image_schotchik = parseInt(image_schotchik);
         }
+
+        function customChangeFon() {
+            var numberFon = Math.round(Math.random() * (27 - 1) + 1);
+            var lincPict = "fon_" + numberFon + ".jpg";
+            var test = "<?=Url::to("@web/flash/custom/")?>" + lincPict;
+            document.body.style.backgroundImage = 'url('+test+')';
+        }
+
 
 
 

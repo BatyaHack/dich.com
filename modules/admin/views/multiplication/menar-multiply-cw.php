@@ -21,7 +21,26 @@ use yii\helpers\Url;
 </head>
 <body>
 <?php $this->beginBody() ?>
-
+<style>
+    #correct_answer_1,
+    #correct_answer_2,
+    #correct_answer_3,
+    #correct_answer_4,
+    #correct_answer_5,
+    #correct_answer_6,
+    #correct_answer_7,
+    #correct_answer_8,
+    #correct_answer_9,
+    #correct_answer_10,
+    #correct_answer_11,
+    #correct_answer_12,
+    #correct_answer_13,
+    #correct_answer_14,
+    #correct_answer_15,
+    #correct_answer_16 {
+        color: green; !important;
+    }
+</style>
 <div class="wrap">
 
     <html style = "height: 100% ; width:100%; ">
@@ -77,7 +96,7 @@ use yii\helpers\Url;
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick = "close_hyese()">&times;</button>
                     <button onclick = "restart(); return false;"  class="close" tabindex = "-1" type="button" style=" margin-right:25px"  >♻   </button>
-                    <button onclick = "change_background(); return false;"  class="close" tabindex = "-1" type="button" style=" margin-right:25px"  >☻   </button>
+                    <button onclick = "customChangeFon(); return false;"  class="close" tabindex = "-1" type="button" style=" margin-right:25px"  >☻   </button>
                     <h4 class="modal-title">Настройки </h4>
                 </div>
                 <div class="panel-body col-lg-7 col-md-7 col-sm-7">
@@ -233,10 +252,10 @@ use yii\helpers\Url;
                     </ul>
                     <ul class="nav navbar-nav" >
                         <div class="btn-group">
-                            <a onclick = "change_background(); return false;"  class="btn btn-default black_style" tabindex = "-1" style = "font-size: 25; height: 50; width:50">☻   </a>
-                            <a  tabindex = "-1" id = "button_restart" class="btn btn-default black_style" onclick = "restart(); return false;" style = "font-size: 25; height: 50; width:50">♻</a>
-                            <a  tabindex = "-1" id = "button_start" class="btn btn-default black_style"  onclick = "generate(); return false;" style = "font-size: 25; height: 50; width:50">►</a>
-                            <a  tabindex = "-1" id = "button_settings" class="btn btn-default black_style" onclick = "button_settings_f(); return false;"style = "font-size: 25; height: 50; width:50; ">&#9776</a>
+                            <a onclick = "customChangeFon(); return false;"  class="btn btn-default black_style" tabindex = "-1" style = "font-size: 25px; height: 50; width:50">☻   </a>
+                            <a  tabindex = "-1" id = "button_restart" class="btn btn-default black_style" onclick = "restart(); return false;" style = "font-size: 25px; height: 50; width:50">♻</a>
+                            <a  tabindex = "-1" id = "button_start" class="btn btn-default black_style"  onclick = "generate(); return false;" style = "font-size: 25px; height: 50; width:50">►</a>
+                            <a  tabindex = "-1" id = "button_settings" class="btn btn-default black_style" onclick = "button_settings_f(); return false;"style = "font-size: 25px; height: 50; width:50; ">&#9776</a>
                         </div>
                     </ul>
             </div>
@@ -891,14 +910,23 @@ use yii\helpers\Url;
 
         var image_schotchik = 0;
         function change_background(){
-            // if (image_schotchik > 26) image_schotchik = 1;
-            // else{
-            //   image_schotchik++;
-            // }
-            image_schotchik = 1 + randomInteger(26)
+            if (image_schotchik > 26) image_schotchik = 1;
+            else{
+                image_schotchik++;
+            }
+            image_schotchik = 1 + randomInteger(26);
             var image_fon = "fon_" + image_schotchik + ".jpg";
-            document.body.style.backgroundImage = 'url(<?=Url::to("@web/flash/custom/fon_1.jpg")?>)';
+            document.body.style.backgroundImage = 'url(<?php
+                $number_fon = rand(1, 27);
+                echo Url::to("@web/flash/custom/fon_".$number_fon.".jpg")
+                ?>)';
             image_schotchik = parseInt(image_schotchik);
+        }
+        function customChangeFon() {
+            var numberFon = Math.round(Math.random() * (27 - 1) + 1);
+            var lincPict = "fon_" + numberFon + ".jpg";
+            var test = "<?=Url::to("@web/flash/custom/")?>" + lincPict;
+            document.body.style.backgroundImage = 'url('+test+')';
         }
 
 

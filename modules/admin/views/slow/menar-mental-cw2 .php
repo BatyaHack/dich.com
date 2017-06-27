@@ -268,7 +268,7 @@ use app\assets\AppAsset;
 
                 <table >
                     <div class="btn-group btn-group-justified" style="float: left; width: 80px;">
-                        <a onclick = "change_background(); "  class="btn btn-default  white_style " tabindex = "-1" ><i class="fa fa-smile-o" aria-hidden="true"></i></a>
+                        <a onclick = "customChangeFon(); "  class="btn btn-default  white_style " tabindex = "-1" ><i class="fa fa-smile-o" aria-hidden="true"></i></a>
                         <a class="btn btn-default  white_style "  onclick = "show_settings(); "><i class="fa fa-gear" aria-hidden="true"></i></a>
                     </div>
                 </table>
@@ -2370,10 +2370,24 @@ use app\assets\AppAsset;
     }
 
     function change_background(){
-        image_schotchik = random_between(1,27)
+        if (image_schotchik > 26) image_schotchik = 1;
+        else{
+            image_schotchik++;
+        }
+        image_schotchik = 1 + randomInteger(26);
         var image_fon = "fon_" + image_schotchik + ".jpg";
-        document.body.style.backgroundImage = 'url(<?=Url::to("@web/flash/custom/fon_1.jpg")?>)';
+        document.body.style.backgroundImage = 'url(<?php
+            $number_fon = rand(1, 27);
+            echo Url::to("@web/flash/custom/fon_".$number_fon.".jpg")
+            ?>)';
         image_schotchik = parseInt(image_schotchik);
+    }
+
+    function customChangeFon() {
+        var numberFon = Math.round(Math.random() * (27 - 1) + 1);
+        var lincPict = "fon_" + numberFon + ".jpg";
+        var test = "<?=Url::to("@web/flash/custom/")?>" + lincPict;
+        document.body.style.backgroundImage = 'url('+test+')';
     }
 
 

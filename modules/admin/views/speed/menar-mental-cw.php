@@ -199,7 +199,7 @@ use app\assets\AppAsset;
                 <button onclick = " show_example(); return false;"  class="navbar-toggle collapsed " data-toggle="collapse"  tabindex = "-1" ><b>EX</b> </button>
                 <button id ="button_voice" onclick = " if (voice==false){voice=true; this.innerHTML = '♫'; $('#black_style_26').html('♫')} else{voice=false; this.innerHTML = '♪'; $('#black_style_26').html('♪')} return false;" class="navbar-toggle collapsed " data-toggle="collapse"  tabindex = "-1" ><b>♫</b> </button>
                 <button onclick = "change_style(); return false;"  class="navbar-toggle collapsed " data-toggle="collapse"  tabindex = "-1" > <b>S</b>  </button>
-                <button onclick = "change_background(); return false;"  class="navbar-toggle collapsed " data-toggle="collapse" tabindex = "-1" >☻   </button>
+                <button onclick = "customChangeFon(); return false;"  class="navbar-toggle collapsed " data-toggle="collapse" tabindex = "-1" >☻   </button>
 
                 <a id = "navbar_logo" tabindex = "-1" class="navbar-brand" href="/games" style = "width: 100px; background:url(static/custom/s5_logo.png); background-position: center center; background-repeat: no-repeat; background-size: contain  "></a>
             </div>
@@ -349,7 +349,7 @@ use app\assets\AppAsset;
 
                             </div>
                             <div class="btn-group-vertical" >
-                                <a onclick = "change_background(); return false;"  class="btn btn-sm btn-default btn-sm black_style" id = "black_style_22" tabindex = "-1" >☻   </a>
+                                <a onclick = "customChangeFon(); return false;"  class="btn btn-sm btn-default btn-sm black_style" id = "black_style_22" tabindex = "-1" >☻   </a>
                                 <a onclick = "change_style(); return false;"  class="btn btn-sm btn-default btn-sm black_style" id = "black_style_23"  tabindex = "-1" >S   </a>
 
                             </div>
@@ -908,10 +908,24 @@ use app\assets\AppAsset;
     }
 
     function change_background(){
-        image_schotchik = random_between(1,27)
+        if (image_schotchik > 26) image_schotchik = 1;
+        else{
+            image_schotchik++;
+        }
+        image_schotchik = 1 + randomInteger(26);
         var image_fon = "fon_" + image_schotchik + ".jpg";
-        document.body.style.backgroundImage = 'url(<?=Url::to("@web/flash/custom/fon_1.jpg")?>)';
+        document.body.style.backgroundImage = 'url(<?php
+            $number_fon = rand(1, 27);
+            echo Url::to("@web/flash/custom/fon_".$number_fon.".jpg")
+            ?>)';
         image_schotchik = parseInt(image_schotchik);
+    }
+
+    function customChangeFon() {
+        var numberFon = Math.round(Math.random() * (27 - 1) + 1);
+        var lincPict = "fon_" + numberFon + ".jpg";
+        var test = "<?=Url::to("@web/flash/custom/")?>" + lincPict;
+        document.body.style.backgroundImage = 'url('+test+')';
     }
 
 

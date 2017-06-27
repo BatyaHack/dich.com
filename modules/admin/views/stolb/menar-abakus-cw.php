@@ -161,7 +161,7 @@ StolbAsset::register($this);
     <div class="container-fluid" style="margin:0">
         <div class="navbar-header">
             <button   type="button" class="navbar-toggle collapsed " data-toggle="collapse" onclick= "button_nastroyki_f(); return false;"> &#9776 </button>
-            <button onclick = "change_background(); return false;"   class="navbar-toggle collapsed " data-toggle="collapse" tabindex = "-1" type="button">☻ </button>
+            <button onclick = "customChangeFon(); return false;"   class="navbar-toggle collapsed " data-toggle="collapse" tabindex = "-1" type="button">☻ </button>
             <button onclick = "change_style(); return false;"  class="navbar-toggle collapsed " data-toggle="collapse" type="button" ><b>S</b></button>
             <a id = "navbar_logo" tabindex = "-1" class="navbar-brand" href="/games" style = "width: 110px; background:url(/static/custom/css/s5_logo.png) ; background-position: center center; background-repeat: no-repeat;  background-size: contain  "></a>
         </div>
@@ -272,7 +272,7 @@ StolbAsset::register($this);
                     <div class="btn-group">
                         <div class="btn-group-vertical" >
                             <a onclick = "change_style(); return false;"  class="btn  btn-default black_style"  id = "black_style_8"  tabindex = "-1" >S   </a>
-                            <a onclick = "change_background(); return false;"  class="btn   btn-default black_style" id = "black_style_9"  tabindex = "-1" >☻   </a>
+                            <a onclick = "customChangeFon(); return false;"  class="btn   btn-default black_style" id = "black_style_9"  tabindex = "-1" >☻   </a>
                         </div>
                         <div class="btn-group-vertical" >
                             <a  tabindex = "-1"  class="btn  btn-default black_style"  id = "black_style_10"  onclick = "restart(); return false;" >♻</a>
@@ -805,11 +805,24 @@ StolbAsset::register($this);
     var style = true;
     var image_schotchik = 0;
     function change_background(){
-
-        image_schotchik = random_between(1,27)
+        if (image_schotchik > 26) image_schotchik = 1;
+        else{
+            image_schotchik++;
+        }
+        image_schotchik = 1 + randomInteger(26);
         var image_fon = "fon_" + image_schotchik + ".jpg";
-        document.body.style.backgroundImage = 'url(<?=Url::to("@web/flash/custom/fon_1.jpg")?>)';
+        document.body.style.backgroundImage = 'url(<?php
+            $number_fon = rand(1, 27);
+            echo Url::to("@web/flash/custom/fon_".$number_fon.".jpg")
+            ?>)';
         image_schotchik = parseInt(image_schotchik);
+    }
+
+    function customChangeFon() {
+        var numberFon = Math.round(Math.random() * (27 - 1) + 1);
+        var lincPict = "fon_" + numberFon + ".jpg";
+        var test = "<?=Url::to("@web/flash/custom/")?>" + lincPict;
+        document.body.style.backgroundImage = 'url('+test+')';
     }
 
     function create_columns(n){
