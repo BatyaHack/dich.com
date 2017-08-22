@@ -28,22 +28,36 @@ AppAsset::register($this);
     <div class="wrap">
         <?php
         NavBar::begin([
-            'brandLabel' => 'My Company',
-            'brandUrl' => Yii::$app->homeUrl,
+            'brandLabel' => 'Ментальная арифметика'
+            /*'brandUrl' => Yii::$app->homeUrl,
             'options' => [
                 'class' => 'navbar-inverse navbar-fixed-top',
-            ],
+            ]*/
         ]);
-        echo Nav::widget([
-            'options' => ['class' => 'navbar-nav navbar-right'],
-            'items' => [
-                ['label' => 'Игры', 'url' => ['/admin/game/index']],
-                ['label' => 'Логин', 'url' => [Url::to('/site/login')]],
-            ],
-        ]);
+        if(!Yii::$app->user->isGuest){
+            echo Nav::widget([
+                'options' => ['class' => 'navbar-nav navbar-right'],
+                'items' => [
+//                ['label' => 'Игры', 'url' => ['/admin/game/index']],
+                  Html :: a ( 'Logout' , [ '/site/logout' ], [ 'class' => 'btn btn-success add-margin' , 'data-method' => 'post' ])
+                ],
+            ]);
+        } else {
+            echo Nav::widget([
+                'options' => ['class' => 'navbar-nav navbar-right'],
+                'items' => [
+//                ['label' => 'Игры', 'url' => ['/admin/game/index']],
+//                ['label' => 'Выход', 'url' => [Url::to('/web/site/logout')]],
+                ],
+            ]);
+        }
         NavBar::end();
         ?>
-
+        <style>
+            .add-margin{
+                margin-top: 7px;
+            }
+        </style>
         <div class="container">
             <?= Breadcrumbs::widget([
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],

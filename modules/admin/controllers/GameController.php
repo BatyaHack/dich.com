@@ -17,10 +17,12 @@ class GameController extends BehaviorsController
 {
     public function actionIndex()
     {
-        if(Yii::$app->user->isGuest)
-        {
-            Yii::$app->controller->layout = "/guest";
-        }
+        //если нужен гость и админ
+//        if(Yii::$app->user->isGuest)
+//        {
+//            Yii::$app->controller->layout = "/guest";
+//        }
+        Yii::$app->controller->layout = "/guest";
         return $this->render('index');
     }
 }

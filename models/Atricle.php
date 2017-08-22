@@ -78,11 +78,11 @@ class Atricle extends \yii\db\ActiveRecord
     public function getImage()
     {
 
-        return ($this->img) ? "/uploads/" . $this->img : "/uploads/" . 'no-img.jpg';
+       // return ($this->img) ? "/web/uploads/" . $this->img : "/uploads/" . 'no-img.jpg';
 
 
-        //На сервере!
-        /*return ($this->img) ? ("/web/" . "uploads/" . $this->img)
-            : ("/web/" . "uploads/" . 'no-img.png');*/
+
+        return ($this->img) ? ("/web/" . "uploads/" . $this->img)
+            : ("/web/" . "uploads/" . 'no-img.jpg');
     }
 }
